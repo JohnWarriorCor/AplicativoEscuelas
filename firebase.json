@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/AppEscuela",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+/* ESTILOS GENERALES */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+body{
+    background-color: #f9dc3f;
+}
+#particles-js {
+	height: 100vh; 
+	width: 100%;
+    position: fixed;
+    z-index: -1;
+}
