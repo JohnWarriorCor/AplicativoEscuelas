@@ -1,0 +1,18 @@
+<div id="particles-js"></div>
+<div class="container">
+  <div class="row justify-content-center text-center slide-in-elliptic-top-fwd">
+    <img src="assets/Titulo.png" alt="Escuela" style="width: 60%;height: 60%;">
+  </div>
+  <div class="row justify-content-center text-center bounce-in-top">
+    <img src="assets/pizarra.jpg" style="width: 30%;">
+    <img class="capa1" src="assets/tres.png">
+  </div>
+  <div class="row justify-content-center text-center slide-in-bck-center">
+    <img (mouseover)="hover1=true" (mouseleave)="hover1=false" [ngClass]="{'heartbeat': hover1}" [routerLink]="['/home']" src="assets/Jugar.png" (click)="sonido()" alt="Escuela" style="width: 25%;height: 25%;margin-top: 2%;">
+  </div>
+  <br><br>
+  <div class="row justify-content-center text-center slide-in-bck-center">
+      <button class="btn btn" (click)="played()" ><i class="fas fa-volume-up" style="font-size: 25px"></i></button>
+      <button class="btn btn" (click)="stoped()" ><i class="fas fa-volume-mute" style="font-size: 25px"></i></button>
+    </div>
+</div>

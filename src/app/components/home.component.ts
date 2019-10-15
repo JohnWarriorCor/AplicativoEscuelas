@@ -14,5 +14,8 @@ export class HomeComponent implements OnInit {
     // tslint:disable-next-line:only-arrow-functions
     particlesJS.load('particles-js', 'assets/data/particles.json', null);
   }
-
+  sonido() {
+    const snd = new Audio('assets/instrucciones.mp3'); // buffers automatically when created
+    snd.play();
+  }
 }

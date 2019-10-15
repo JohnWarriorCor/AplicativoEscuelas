@@ -1,0 +1,46 @@
+<div id="particles-js"></div>
+<div class="container" style="padding-top: 20px;">
+  <div class="jumbotron contenedor">
+    <h1 class="display-4 titulo">Operación de [0 a 5]</h1>
+    <br>
+    <div class="row">
+      <div class="col text-center">
+        <img src="assets/tresresta.png" alt="" style="width: 100%;">
+        <div class="form-group">
+          <input value="3" type="text" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
+        </div>
+      </div>
+      <div class="col text-center">
+          <img src="assets/menos.png" alt="" style="width: 100%;">
+          <div class="form-group">
+          <input value="-" type="text" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
+        </div>
+      </div>
+      <div class="col text-center">
+          <img src="assets/dosresta.png" alt="" style="width: 100%;">
+          <div class="form-group">
+          <input value="2" type="text" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
+        </div>
+      </div>
+      <div class="col text-center">
+          <img src="assets/igual.png" alt="" style="width: 100%;">
+          <div class="form-group">
+          <input value="=" type="text" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
+        </div>
+      </div>
+      <div class="col text-center">
+          <img src="assets/unoresta.png" alt="" style="width: 100%;">
+          <div class="form-group">
+          <input type="text" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+          <button style="margin: 5px;" routerLinkActive="router-link-active"  class="btn btn-success">Respuesta</button>
+        <button style="margin: 5px;" [routerLink]="['/home']" routerLinkActive="router-link-active"  class="btn btn-danger">Retroceder</button>
+        <button class="btn btn" (click)="sonido()" ><i class="fas fa-redo" style="font-size: 25px"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
