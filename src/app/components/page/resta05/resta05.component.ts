@@ -18,18 +18,26 @@ export class Resta05Component implements OnInit {
   ngOnInit() {
     particlesJS.load('particles-js', 'assets/data/particles.json', null);
     // this.snd.play();
-    if (this.num1 < this.num2) {
+    this.azar();
+    this.imagencampo1();
+    this.imagencampo2();
+
+    // return this.imagen;
+  }
+  /* PARA LA RESTA
+  if (this.num1 < this.num2) {
       this.comodin = this.num1;
       this.num1 = this.num2;
       this.num2 = this.comodin;
       return[this.num1, this.num2, this.res];
     }
+  */
+  azar() {
     this.res = this.num1 + this.num2;
     console.log(this.num1, '+' , this.num2);
     console.log('=', this.res);
-
-    // return this.imagen;
-
+  }
+  imagencampo1() {
     switch (this.num1) {
       case 1:
         this.imagen = 'assets/unocarro.png';
@@ -47,6 +55,9 @@ export class Resta05Component implements OnInit {
         this.imagen = 'assets/cincocarro.png';
         break;
     }
+    return this.imagen;
+  }
+  imagencampo2() {
     switch (this.num2) {
     case 1:
       this.imagen2 = 'assets/unocarro.png';
@@ -64,7 +75,7 @@ export class Resta05Component implements OnInit {
       this.imagen2 = 'assets/cincocarro.png';
       break;
     }
-
+    return this.imagen2;
   }
   sonido() {
     this.snd.play();
