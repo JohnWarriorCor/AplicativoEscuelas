@@ -3,23 +3,24 @@
   <div class="jumbotron contenedor">
     <h1 class="display-4 titulo">Operación de [0 a 5]</h1>
     <br>
+    
     <div class="row">
       <div class="col text-center">
-        <img src="assets/tresresta.png" alt="" style="width: 100%;">
+        <img src={{imagen}} alt="" style="width: 100%;">
         <div class="form-group">
-          <input value="3" type="text" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
+          <input value="{{num1}}" type="text" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
         </div>
       </div>
       <div class="col text-center">
           <img src="assets/menos.png" alt="" style="width: 100%;">
           <div class="form-group">
-          <input value="-" type="text" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
+          <input value="+" type="text" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
         </div>
       </div>
       <div class="col text-center">
-          <img src="assets/dosresta.png" alt="" style="width: 100%;">
+          <img src={{imagen2}} alt="" style="width: 100%;">
           <div class="form-group">
-          <input value="2" type="text" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
+          <input value="{{num2}}" type="text" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
         </div>
       </div>
       <div class="col text-center">
@@ -31,7 +32,7 @@
       <div class="col text-center">
           <img src="assets/unoresta.png" alt="" style="width: 100%;">
           <div class="form-group">
-          <input type="text" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
+          <input value="{{res}}" type="text" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
         </div>
       </div>
     </div>
