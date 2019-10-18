@@ -12,6 +12,7 @@ export class Resta05Component implements OnInit {
   num1 = (Math.floor(Math.random() * 5) + 1);
   num2 = (Math.floor(Math.random() * 5) + 1);
   res = 0;
+  resu:number;
   comodin: number;
   constructor() { }
   snd = new Audio('assets/resta1.mp3'); // buffers automatically when created
@@ -31,12 +32,18 @@ export class Resta05Component implements OnInit {
       this.num2 = this.comodin;
       return[this.num1, this.num2, this.res];
     }
+
+     if(this.res = this.resu){
+      console.log('bien');
+    }
   */
   azar() {
     this.res = this.num1 + this.num2;
     console.log(this.num1, '+' , this.num2);
     console.log('=', this.res);
+   
   }
+  
   imagencampo1() {
     switch (this.num1) {
       case 1:
@@ -77,6 +84,7 @@ export class Resta05Component implements OnInit {
     }
     return this.imagen2;
   }
+  
   sonido() {
     this.snd.play();
   }
