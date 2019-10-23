@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 
 declare var particlesJS: any;
+=======
+>>>>>>> 73d35db6c94745e40c23ce35ffab55610bc04b76
 
+declare var particlesJS: any;
 @Component({
   selector: 'app-resta05',
   templateUrl: './resta05.component.html',
@@ -14,8 +18,8 @@ export class Resta05Component implements OnInit {
   num1 = (Math.floor(Math.random() * 5) + 1);
   num2 = (Math.floor(Math.random() * 5) + 1);
   res = 0;
-  resu:number;
-  comodin: number;
+  resultado = 0;
+  comodin = 0;
   constructor() { }
   snd = new Audio('assets/resta1.mp3'); // buffers automatically when created
   ngOnInit() {
@@ -48,6 +52,7 @@ export class Resta05Component implements OnInit {
     this.res = this.num1 + this.num2;
     console.log(this.num1, '+' , this.num2);
     console.log('=', this.res);
+<<<<<<< HEAD
    
 
   }
@@ -58,6 +63,19 @@ export class Resta05Component implements OnInit {
     }
   }
 
+=======
+  }
+  respuesta(num) {
+    console.log(num);
+    console.log(this.res);
+    num = parseInt(num, 10);
+    if (this.res === num) {
+      console.log('Acierto');
+    } else {
+      console.log('Error');
+    }
+  }
+>>>>>>> 73d35db6c94745e40c23ce35ffab55610bc04b76
   imagencampo1() {
     switch (this.num1) {
       case 1:
@@ -98,7 +116,6 @@ export class Resta05Component implements OnInit {
     }
     return this.imagen2;
   }
-  
   sonido() {
     this.snd.play();
   }

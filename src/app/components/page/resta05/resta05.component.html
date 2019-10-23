@@ -3,8 +3,8 @@
   <div class="jumbotron contenedor">
     <h1 class="display-4 titulo">Operación de [1 a 5]</h1>
     <br>
-    
-    <div class="row">
+    <form  #forma="ngForm">
+      <div class="row">
       <div class="col text-center">
         <img src={{imagen}} alt="" style="width: 100%;">
         <div class="form-group">
@@ -36,18 +36,28 @@
       
           <img src="assets/res.png" alt="" style="width: 100%;">
           <div class="form-group">
+<<<<<<< HEAD
           <input type="number"  class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
   
         </div>
+=======
+            <input name="resultado" [(ngModel)]="resultado" type="text" class="form-control text-center" id="resu" style="margin-top: 20px;font-size: 58px;color: black;">
+          </div>
+>>>>>>> 73d35db6c94745e40c23ce35ffab55610bc04b76
       </div>
     </div>
 
     <div class="row">
       <div class="col text-center">
+<<<<<<< HEAD
           <button (click)="validate()" style="margin: 5px;"  routerLinkActive="router-link-active"  class="btn btn-success">Respuesta</button>
+=======
+          <button style="margin: 5px;" (click)="respuesta(resultado)" class="btn btn-success">Respuesta</button>
+>>>>>>> 73d35db6c94745e40c23ce35ffab55610bc04b76
         <button style="margin: 5px;" [routerLink]="['/home']" routerLinkActive="router-link-active"  class="btn btn-danger">Retroceder</button>
         <button class="btn btn" (click)="sonido()" ><i class="fas fa-redo" style="font-size: 25px"></i></button>
       </div>
     </div>
+    </form>
   </div>
 </div>
