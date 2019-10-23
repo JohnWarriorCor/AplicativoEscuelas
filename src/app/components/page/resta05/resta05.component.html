@@ -29,16 +29,22 @@
           <input value="=" type="text" readonly="true" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
         </div>
       </div>
+
+   
       <div class="col text-center">
+        
+      
           <img src="assets/res.png" alt="" style="width: 100%;">
           <div class="form-group">
-          <input value="{{resu}}" type="text" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
+          <input type="number"  class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
+  
         </div>
       </div>
     </div>
+
     <div class="row">
       <div class="col text-center">
-          <button style="margin: 5px;" routerLinkActive="router-link-active"  class="btn btn-success">Respuesta</button>
+          <button (click)="validate()" style="margin: 5px;"  routerLinkActive="router-link-active"  class="btn btn-success">Respuesta</button>
         <button style="margin: 5px;" [routerLink]="['/home']" routerLinkActive="router-link-active"  class="btn btn-danger">Retroceder</button>
         <button class="btn btn" (click)="sonido()" ><i class="fas fa-redo" style="font-size: 25px"></i></button>
       </div>

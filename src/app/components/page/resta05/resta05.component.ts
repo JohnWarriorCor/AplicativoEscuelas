@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 declare var particlesJS: any;
 
 @Component({
@@ -7,6 +8,7 @@ declare var particlesJS: any;
   styleUrls: ['./resta05.component.css']
 })
 export class Resta05Component implements OnInit {
+  numero=0;
   imagen = '';
   imagen2 = '';
   num1 = (Math.floor(Math.random() * 5) + 1);
@@ -33,17 +35,29 @@ export class Resta05Component implements OnInit {
       return[this.num1, this.num2, this.res];
     }
 
-     if(this.res = this.resu){
-      console.log('bien');
-    }
+     
   */
+  
+ 
+  myFunc(){
+    console.log("function called");
+  }
+
+ 
   azar() {
     this.res = this.num1 + this.num2;
     console.log(this.num1, '+' , this.num2);
     console.log('=', this.res);
    
+
   }
-  
+
+  validate(){
+    if(this.res === this.resu){
+      console.log('bien');
+    }
+  }
+
   imagencampo1() {
     switch (this.num1) {
       case 1:
