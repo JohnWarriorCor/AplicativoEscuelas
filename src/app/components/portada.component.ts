@@ -12,10 +12,7 @@ export class PortadaComponent implements OnInit {
   sound = new Audio('assets/fondo.mp3'); // buffers automatically when created
   ngOnInit() {
     particlesJS.load('particles-js', 'assets/data/particles.json', null);
-    this.sound.loop = true;
-    this.sound.autoplay = true ;
-    this.sound.load();
-    this.sound.play();
+    this.played();
   }
   stoped() {
     this.sound.pause();
@@ -24,6 +21,9 @@ export class PortadaComponent implements OnInit {
     const snd = new Audio('assets/Boton1.mp3'); // buffers automatically when created
     snd.play();
     this.sound.pause();
+  }
+  musicafondo() {
+    this.sound.play();
   }
   played() {
     this.sound.loop = true;
