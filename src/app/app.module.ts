@@ -7,13 +7,16 @@ import { HomeComponent } from './components/home.component';
 import { APP_ROUTING } from './app.routing';
 import { PortadaComponent } from './components/portada.component';
 import { Resta05Component } from './components/page/resta05/resta05.component';
+import { Suma05Component } from './components/page/suma05.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PortadaComponent,
-    Resta05Component
+    Resta05Component,
+    Suma05Component
   ],
   imports: [
     BrowserModule,
