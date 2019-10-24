@@ -116,20 +116,20 @@ export class Resta05Component implements OnInit {
           this.imagen2 = 'assets/apple/dos.png';
           return this.imagen + this.imagen2;
       }
-    }
-    }
-    }
-    }
-    }
-    }
-    }
-    }
-    }
-    }
-    }
-  }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
+  }
+        }
+      }
     } else {
       if ( this.imag === 1 ) {
       this.nu = 'ball';
@@ -207,21 +207,21 @@ export class Resta05Component implements OnInit {
           this.imagen = 'assets/ball/cinco.png';
           this.imagen2 = 'assets/ball/dos.png';
           return this.imagen + this.imagen2;
+        }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
-    }
-    }
-    }
-    }
-    }
-    }
-    }
-    }
-    }
-    }
-  }
+        }
       }
-    }
     } else {
       if ( this.imag === 2 ) {
         this.nu = 'car';
@@ -299,25 +299,24 @@ export class Resta05Component implements OnInit {
             this.imagen = 'assets/car/cinco.png';
             this.imagen2 = 'assets/car/dos.png';
             return this.imagen + this.imagen2;
+          }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
-      }
-      }
-      }
-      }
-      }
-      }
-      }
-      }
-      }
-      }
     }
+            }
+          }
         }
       }
-      }
     }
-    }
-
   }
         azar() {
     if (this.num1 < this.num2) {
