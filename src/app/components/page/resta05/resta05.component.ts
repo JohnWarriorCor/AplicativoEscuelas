@@ -26,7 +26,7 @@ export class Resta05Component implements OnInit {
   imagenr = 'assets/res.png';
   num1 = (Math.floor(Math.random() * 5) + 1);
   num2 = (Math.floor(Math.random() * 5) + 1);
-  imag = 0;  // Math.floor(Math.random() * 3) ;
+  imag =  Math.floor(Math.random() * 3) ;
   res = 0;
   resu: number;
   comodin: number;
@@ -128,6 +128,192 @@ export class Resta05Component implements OnInit {
     }
     }
   }
+      }
+    }
+    } else {
+      if ( this.imag === 1 ) {
+      this.nu = 'ball';
+      if (this.num1 === 1 && this.num2 === 1) {
+        this.imagen = 'assets/ball/uno.png';
+        this.imagen2 = 'assets/ball/uno.png';
+        return this.imagen + this.imagen2;
+      } else {
+        if (this.num1 === 2 && this.num2 === 2) {
+          this.imagen = 'assets/ball/dos.png';
+          this.imagen2 = 'assets/ball/dos.png';
+          return this.imagen + this.imagen2;
+      } else {
+        if (this.num1 === 3 && this.num2 === 3) {
+          this.imagen = 'assets/ball/tres.png';
+          this.imagen2 = 'assets/ball/tres.png';
+          return this.imagen + this.imagen2;
+      } else {
+        if (this.num1 === 4 && this.num2 === 4) {
+          this.imagen = 'assets/ball/cuatro.png';
+          this.imagen2 = 'assets/ball/cuatro.png';
+          return this.imagen + this.imagen2;
+      } else {
+        if (this.num1 === 5 && this.num2 === 5) {
+          this.imagen = 'assets/ball/cinco.png';
+          this.imagen2 = 'assets/ball/cinco.png';
+          return this.imagen + this.imagen2;
+      } else {
+        if (this.num1 === 2 && this.num2 === 1) {
+          this.imagen = 'assets/ball/dos.png';
+          this.imagen2 = 'assets/ball/uno.png';
+          return this.imagen + this.imagen2;
+      } else {
+        if (this.num1 === 3 && this.num2 === 1) {
+          this.imagen = 'assets/ball/tres.png';
+          this.imagen2 = 'assets/ball/uno.png';
+          return this.imagen + this.imagen2;
+      } else {
+        if (this.num1 === 4 && this.num2 === 1) {
+          this.imagen = 'assets/ball/cuatro.png';
+          this.imagen2 = 'assets/ball/uno.png';
+          return this.imagen + this.imagen2;
+      } else {
+        if (this.num1 === 5 && this.num2 === 1) {
+          this.imagen = 'assets/ball/cinco.png';
+          this.imagen2 = 'assets/ball/uno.png';
+          return this.imagen + this.imagen2;
+      } else {
+        if (this.num1 === 3 && this.num2 === 2) {
+          this.imagen = 'assets/ball/tres.png';
+          this.imagen2 = 'assets/ball/dos.png';
+          return this.imagen + this.imagen2;
+      } else {
+        if (this.num1 === 4 && this.num2 === 3) {
+          this.imagen = 'assets/ball/cuatro.png';
+          this.imagen2 = 'assets/ball/tres.png';
+          return this.imagen + this.imagen2;
+      } else {
+        if (this.num1 === 4 && this.num2 === 2) {
+          this.imagen = 'assets/ball/cuatro.png';
+          this.imagen2 = 'assets/ball/dos.png';
+          return this.imagen + this.imagen2;
+      } else {
+        if (this.num1 === 5 && this.num2 === 4) {
+          this.imagen = 'assets/ball/cinco.png';
+          this.imagen2 = 'assets/ball/cuatro.png';
+          return this.imagen + this.imagen2;
+      } else {
+        if (this.num1 === 5 && this.num2 === 3) {
+          this.imagen = 'assets/ball/cinco.png';
+          this.imagen2 = 'assets/ball/tres.png';
+          return this.imagen + this.imagen2;
+      } else {
+        if (this.num1 === 5 && this.num2 === 2) {
+          this.imagen = 'assets/ball/cinco.png';
+          this.imagen2 = 'assets/ball/dos.png';
+          return this.imagen + this.imagen2;
+      }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+    }
+  }
+      }
+    }
+    } else {
+      if ( this.imag === 2 ) {
+        this.nu = 'car';
+        if (this.num1 === 1 && this.num2 === 1) {
+          this.imagen = 'assets/car/uno.png';
+          this.imagen2 = 'assets/car/uno.png';
+          return this.imagen + this.imagen2;
+        } else {
+          if (this.num1 === 2 && this.num2 === 2) {
+            this.imagen = 'assets/car/dos.png';
+            this.imagen2 = 'assets/car/dos.png';
+            return this.imagen + this.imagen2;
+        } else {
+          if (this.num1 === 3 && this.num2 === 3) {
+            this.imagen = 'assets/car/tres.png';
+            this.imagen2 = 'assets/car/tres.png';
+            return this.imagen + this.imagen2;
+        } else {
+          if (this.num1 === 4 && this.num2 === 4) {
+            this.imagen = 'assets/car/cuatro.png';
+            this.imagen2 = 'assets/car/cuatro.png';
+            return this.imagen + this.imagen2;
+        } else {
+          if (this.num1 === 5 && this.num2 === 5) {
+            this.imagen = 'assets/car/cinco.png';
+            this.imagen2 = 'assets/car/cinco.png';
+            return this.imagen + this.imagen2;
+        } else {
+          if (this.num1 === 2 && this.num2 === 1) {
+            this.imagen = 'assets/car/dos.png';
+            this.imagen2 = 'assets/car/uno.png';
+            return this.imagen + this.imagen2;
+        } else {
+          if (this.num1 === 3 && this.num2 === 1) {
+            this.imagen = 'assets/car/tres.png';
+            this.imagen2 = 'assets/car/uno.png';
+            return this.imagen + this.imagen2;
+        } else {
+          if (this.num1 === 4 && this.num2 === 1) {
+            this.imagen = 'assets/car/cuatro.png';
+            this.imagen2 = 'assets/car/uno.png';
+            return this.imagen + this.imagen2;
+        } else {
+          if (this.num1 === 5 && this.num2 === 1) {
+            this.imagen = 'assets/car/cinco.png';
+            this.imagen2 = 'assets/car/uno.png';
+            return this.imagen + this.imagen2;
+        } else {
+          if (this.num1 === 3 && this.num2 === 2) {
+            this.imagen = 'assets/car/tres.png';
+            this.imagen2 = 'assets/car/dos.png';
+            return this.imagen + this.imagen2;
+        } else {
+          if (this.num1 === 4 && this.num2 === 3) {
+            this.imagen = 'assets/car/cuatro.png';
+            this.imagen2 = 'assets/car/tres.png';
+            return this.imagen + this.imagen2;
+        } else {
+          if (this.num1 === 4 && this.num2 === 2) {
+            this.imagen = 'assets/car/cuatro.png';
+            this.imagen2 = 'assets/car/dos.png';
+            return this.imagen + this.imagen2;
+        } else {
+          if (this.num1 === 5 && this.num2 === 4) {
+            this.imagen = 'assets/car/cinco.png';
+            this.imagen2 = 'assets/car/cuatro.png';
+            return this.imagen + this.imagen2;
+        } else {
+          if (this.num1 === 5 && this.num2 === 3) {
+            this.imagen = 'assets/car/cinco.png';
+            this.imagen2 = 'assets/car/tres.png';
+            return this.imagen + this.imagen2;
+        } else {
+          if (this.num1 === 5 && this.num2 === 2) {
+            this.imagen = 'assets/car/cinco.png';
+            this.imagen2 = 'assets/car/dos.png';
+            return this.imagen + this.imagen2;
+        }
+      }
+      }
+      }
+      }
+      }
+      }
+      }
+      }
+      }
+      }
+      }
+    }
+        }
+      }
       }
     }
     }
