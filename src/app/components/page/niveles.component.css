@@ -1,0 +1,52 @@
+.fadeIn {
+    animation-name: fadeIn;
+}
+.caki{
+    color: #DFD4A6
+}
+.factores{
+    font-size: 20px;
+    height: 50px;
+    width: 600px;
+    border-radius:15px 0px 15px 0px;
+    background-color: #8F141B;
+    padding: 10px;
+    color: #DFD4A6;
+}
+
+.claro2{
+    background-color: rgb(167, 25, 32);
+    color: rgb(236, 224, 176)
+}
+.indice{
+    margin: 5px;
+    font-size: 30px;
+    background-color: #8F141B;
+}
+.navcon{
+    background-color: #DFD4A6;
+    color: #8F141B;
+    border-bottom-style: solid;
+    border-color: #ccc;
+    border-width: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.navlinkin{
+    background-color: #8F141B;
+    color: #DFD4A6;
+}
+.navlinkinSolid{
+    background-color: #8F141B;
+    color: #DFD4A6;
+}
+.navlinkout{
+    background-color: #DFD4A6;
+    color: #8f141b;
+}
+.navlinkin:hover{
+    background-color: rgb(179, 27, 34);
+    color: rgb(255, 242, 191);
+}
