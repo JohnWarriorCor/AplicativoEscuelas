@@ -1,31 +1,30 @@
-<div id="particles-js"></div>
-<div class="container" style="padding-top: 20px;">
-    <div class="jumbotron contenedor">
-        <h1 class="display-4 titulo">Operación Resta de [1 a 5]</h1>
+<div class="container text-center" style="padding-top: 20px;">
+    <h1>Operación Resta de [1 a 5]</h1>
+    <div class="container-fluid slide-in-elliptic-top-fwd" style="margin-top: 15%;margin-bottom: 5%;; background-color: #30503b; padding: 20px;border: solid 10px #aa6d41;">
         <br>
         <form #forma="ngForm">
             <div class="row">
                 <div class="col text-center">
-                    <img src={{imagen}} alt="" style="width: 100%;">
-                    <div class="form-group">
+                    <img class="slide-in-fwd-center5" src={{imagen}} alt="" style="width: 100%;">
+                    <div class="form-group bounce-in-top1">
                         <input value="{{num1}}" readonly="true" type="text" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
                     </div>
                 </div>
                 <div class="col text-center">
-                    <img src="assets/menos.png" alt="" style="width: 100%;">
-                    <div class="form-group">
+                    <img class="slide-in-fwd-center5" src="assets/menos.png" alt="" style="width: 100%;">
+                    <div class="form-group bounce-in-top2">
                         <input value="-" type="text" readonly="true" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
                     </div>
                 </div>
                 <div class="col text-center">
-                    <img src={{imagen2}} alt="" style="width: 100%;">
-                    <div class="form-group">
+                    <img class="slide-in-fwd-center5" src={{imagen2}} alt="" style="width: 100%;">
+                    <div class="form-group bounce-in-top3">
                         <input value="{{num2}}" readonly="true" type="text" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
                     </div>
                 </div>
                 <div class="col text-center">
-                    <img src="assets/igual.png" alt="" style="width: 100%;">
-                    <div class="form-group">
+                    <img class="slide-in-fwd-center5" src="assets/igual.png" alt="" style="width: 100%;">
+                    <div class="form-group bounce-in-top4">
                         <input value="=" type="text" readonly="true" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
                     </div>
                 </div>
@@ -34,8 +33,8 @@
                 <div class="col text-center">
 
 
-                    <img src={{imagenr}} alt="" style="width: 100%;">
-                    <div class="form-group">
+                    <img class="slide-in-fwd-center5" src={{imagenr}} alt="" style="width: 100%;">
+                    <div class="form-group bounce-in-top5">
                         <input name="resultado" [(ngModel)]="resu" type="number" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
 
                     </div>
@@ -44,13 +43,14 @@
             </div>
 
 
-            <div class="row">
+            <div class="row fade-in">
                 <div class="col text-center">
                     <button (click)="validate()" style="margin: 5px;" routerLinkActive="router-link-active" class="btn btn-success">Respuesta</button>
                     <!-- <button style="margin: 5px;" (click)="respuesta(resultado)" class="btn btn-success">Respuesta</button> -->
                     <button style="margin: 5px;" [routerLink]="['/niveles']" routerLinkActive="router-link-active" class="btn btn-danger">Retroceder</button>
-                    <button class="btn btn" (click)="sonido()"><i class="fas fa-redo" style="font-size: 25px"></i></button>
+                    <button class="btn btn" (click)="sonido()" style="color: white;"><i class="fas fa-redo" style="font-size: 25px"></i></button>
                 </div>
             </div>
         </form>
+        <br><br><br>
     </div>
