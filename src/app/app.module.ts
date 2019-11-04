@@ -9,6 +9,7 @@ import { PortadaComponent } from './components/portada.component';
 import { Resta05Component } from './components/page/resta05/resta05.component';
 import { Suma05Component } from './components/page/suma05.component';
 import { NivelesComponent } from './components/page/niveles.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { NivelesComponent } from './components/page/niveles.component';
     APP_ROUTING,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

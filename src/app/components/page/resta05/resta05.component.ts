@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 
 declare var particlesJS: any;
@@ -6,9 +7,11 @@ declare var particlesJS: any;
 @Component({
   selector: 'app-resta05',
   templateUrl: './resta05.component.html',
-  styleUrls: ['./resta05.component.css']
+  styleUrls: ['./resta05.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class Resta05Component implements OnInit {
+  env;
   nu = '';
   nu1 = '/uno.png' ;
   nu2 = '/dos.png';
@@ -30,7 +33,7 @@ export class Resta05Component implements OnInit {
   res = 0;
   resu: number;
   comodin: number;
-  constructor() {  }
+  constructor(private modalService: NgbModal) {  }
   snd = new Audio('assets/resta1.mp3'); // buffers automatically when created
   ngOnInit() {
     particlesJS.load('particles-js', 'assets/data/particles.json', null);
@@ -336,8 +339,8 @@ export class Resta05Component implements OnInit {
 
       console.log('bien');
       console.log( this.nu + '/uno.png');
-    }
-            switch (this.resu) {
+      this.env = 'Bien';
+      switch (this.resu) {
         case 0:
           this.imagenr = 'assets/ceroresta.png';
           break;
@@ -372,9 +375,21 @@ export class Resta05Component implements OnInit {
           this.imagenr = 'assets/' + this.nu + this.nu10;
           break;
       }
-            return this.imagenr;
+      return this.imagenr;
+    } else {
+      this.env = 'Error';
+      console.log('Error');
+      this.imagenr = 'assets/error.png';
 
   }
+
+
+}
+    openSm(content) {
+      this.modalService.open(content, { size: 'sm', centered: true });
+    }
+
+
   sonido() {
     this.snd.play();
   }
