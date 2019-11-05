@@ -328,6 +328,7 @@ export class Resta05Component implements OnInit {
       this.comodin = this.num1;
       this.num1 = this.num2;
       this.num2 = this.comodin;
+      this.res = this.num1 - this.num2;
       return[this.num1, this.num2, this.res];
     }
     this.res = this.num1 - this.num2;
@@ -386,7 +387,7 @@ export class Resta05Component implements OnInit {
     }
 }
   openSm(content) {
-    this.modalService.open(content, { size: 'sm', centered: true });
+    this.modalService.open(content, { size: 'lg', centered: true });
   }
   sonido() {
     this.snd.play();

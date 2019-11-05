@@ -26,18 +26,15 @@
                             </video>
                     <div class="modal-header">
                         <h4 class="Respuesta">Respuesta</h4>
-                        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
+                        <button (click)="modal.dismiss('Cross click')" style="color: white;" class="btn btn-danger header-content">X</button>
                     </div>
                     <div class="modal-body">
                         <div class="header-content text-center">
-                            <h3 style="color: white;">Correcto el resultados es: </h3>
+                            <h3 *ngIf="fire" style="color: white;">Correcto el resultados es {{res}}, continúa con la siguiente operación</h3>
+                            <h3 *ngIf="rain" style="color: white;">Respuesta incorrecta, la respuesta de {{num1}} - {{num2}} es {{res}}, pero no te preocupes en la próxima vez lo lograrás </h3>
                             <img src={{imagenr}} alt="" style="width: 50%; display: block; margin-left: auto; margin-right: auto;">
+                            <button (click)="modal.dismiss('Cross click')" class="btn btn-primary"  >Continuar</button>
                         </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
                     </div>
                 </ng-template>
 
@@ -61,7 +58,7 @@
 
                     <img class="slide-in-fwd-center5" src={{imagenr}} alt="" style="width: 100%;">
                     <div class="form-group bounce-in-top5">
-                        <input name="resultado" [(ngModel)]="resu" type="number" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
+                        <input autocomplete="off" name="resultado" [(ngModel)]="resu" type="number" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
 
                     </div>
                     <!--<input name="resultado" [(ngModel)]="resultado" type="text" class="form-control text-center" id="resu" style="margin-top: 20px;font-size: 58px;color: black;">-->

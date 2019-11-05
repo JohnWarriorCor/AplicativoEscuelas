@@ -10,9 +10,11 @@ declare var particlesJS: any;
   encapsulation: ViewEncapsulation.None,
 })
 export class Suma05Component implements OnInit {
+  rain = false;
+  fire = false;
 closeResult: string;
 numero = 0;
-env;
+env = '';
 nu = '';
 nu1 = '/uno.png' ;
 nu2 = '/dos.png';
@@ -514,6 +516,7 @@ validate() {
   if (this.res === this.resu) {
     console.log('bien');
     this.env = 'Bien';
+    this.fire = true;
     switch (this.resu) {
     case 0:
       this.imagenr = 'assets/ceroresta.png';
@@ -549,17 +552,17 @@ validate() {
       this.imagenr = 'assets/' + this.nu + this.nu10;
       break;
   }
-    return this.imagenr;
-    
+    return [this.imagenr, this.fire];
 } else {
   this.env = 'Error';
   console.log('Error');
   this.imagenr = 'assets/error.png';
+  return this.rain = true;
 }
 
 }
 openSm(content) {
-  this.modalService.open(content, { size: 'sm', centered: true });
+  this.modalService.open(content, { size: 'lg', centered: true });
 }
 
 sonido() {

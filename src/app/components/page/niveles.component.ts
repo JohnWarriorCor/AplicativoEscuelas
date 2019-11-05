@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+declare var particlesJS: any;
 @Component({
   selector: 'app-niveles',
   templateUrl: './niveles.component.html',
@@ -18,6 +18,9 @@ export class NivelesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    // tslint:disable-next-line:only-arrow-functions
+    particlesJS.load('particles-js', 'assets/data/particles.json', null);
   }
 
 }
