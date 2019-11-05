@@ -11,7 +11,9 @@ declare var particlesJS: any;
   encapsulation: ViewEncapsulation.None,
 })
 export class Resta05Component implements OnInit {
-  env;
+  rain = false;
+  fire = false;
+  env = '';
   nu = '';
   nu1 = '/uno.png' ;
   nu2 = '/dos.png';
@@ -333,63 +335,59 @@ export class Resta05Component implements OnInit {
     console.log('=', this.res);
 
   }
-
-        validate() {
-            if (this.res === this.resu) {
-
+  validate() {
+    if (this.res === this.resu) {
+      this.fire = true;
       console.log('bien');
       console.log( this.nu + '/uno.png');
       this.env = 'Bien';
       switch (this.resu) {
-        case 0:
-          this.imagenr = 'assets/ceroresta.png';
-          break;
-        case 1:
-          this.imagenr = 'assets/' + this.nu + this.nu1;
-          break;
-        case 2:
-          this.imagenr = 'assets/' + this.nu + this.nu2;
-          break;
-        case 3:
-          this.imagenr = 'assets/' + this.nu + this.nu3;
-          break;
-        case 4:
-          this.imagenr = 'assets/' +  this.nu + this.nu4;
-          break;
-        case 5:
-          this.imagenr = 'assets/' + this.nu + this.nu5;
-          break;
-          case 6:
-          this.imagenr = 'assets/' + this.nu + this.nu6;
-          break;
-          case 7:
-          this.imagenr = 'assets/' + this.nu + this.nu7;
-          break;
-          case 8:
-          this.imagenr = 'assets/' + this.nu + this.nu8;
-          break;
-          case 9:
-          this.imagenr = 'assets/' + this.nu + this.nu9;
-          break;
-          case 10:
-          this.imagenr = 'assets/' + this.nu + this.nu10;
-          break;
-      }
-      return this.imagenr;
+      case 0:
+        this.imagenr = 'assets/ceroresta.png';
+        break;
+      case 1:
+        this.imagenr = 'assets/' + this.nu + this.nu1;
+        break;
+      case 2:
+        this.imagenr = 'assets/' + this.nu + this.nu2;
+        break;
+      case 3:
+        this.imagenr = 'assets/' + this.nu + this.nu3;
+        break;
+      case 4:
+        this.imagenr = 'assets/' +  this.nu + this.nu4;
+        break;
+      case 5:
+        this.imagenr = 'assets/' + this.nu + this.nu5;
+        break;
+        case 6:
+        this.imagenr = 'assets/' + this.nu + this.nu6;
+        break;
+        case 7:
+        this.imagenr = 'assets/' + this.nu + this.nu7;
+        break;
+        case 8:
+        this.imagenr = 'assets/' + this.nu + this.nu8;
+        break;
+        case 9:
+        this.imagenr = 'assets/' + this.nu + this.nu9;
+        break;
+        case 10:
+        this.imagenr = 'assets/' + this.nu + this.nu10;
+        break;
+    }
+      return [this.imagenr, this.fire];
     } else {
+      this.rain = true;
       this.env = 'Error';
       console.log('Error');
       this.imagenr = 'assets/error.png';
-
-  }
-
-
-}
-    openSm(content) {
-      this.modalService.open(content, { size: 'sm', centered: true });
+      return this.rain;
     }
-
-
+}
+  openSm(content) {
+    this.modalService.open(content, { size: 'sm', centered: true });
+  }
   sonido() {
     this.snd.play();
   }
