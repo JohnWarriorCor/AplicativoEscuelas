@@ -7,9 +7,9 @@ import { HomeComponent } from './components/home.component';
 import { APP_ROUTING } from './app.routing';
 import { PortadaComponent } from './components/portada.component';
 import { Resta05Component } from './components/page/resta05/resta05.component';
-import { Suma05Component } from './components/page/suma05.component';
-import { NivelesComponent } from './components/page/niveles.component';
+import { NivelesComponent } from './components/page/niveles/niveles.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { Suma05Component } from './components/page/suma05/suma05.component';
 
 
 @NgModule({

@@ -2,8 +2,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home.component';
 import { PortadaComponent } from './components/portada.component';
 import { Resta05Component } from './components/page/resta05/resta05.component';
-import { Suma05Component } from './components/page/suma05.component';
-import { NivelesComponent } from './components/page/niveles.component';
+import { Suma05Component } from './components/page/suma05/suma05.component';
+import { NivelesComponent } from './components/page/niveles/niveles.component';
 
 const routes: Routes = [
   { path: 'portada', component: PortadaComponent },

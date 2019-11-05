@@ -1,18 +1,18 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
-
 declare var particlesJS: any;
 
 @Component({
-  selector: 'app-resta05',
-  templateUrl: './resta05.component.html',
-  styleUrls: ['./resta05.component.css'],
+  selector: 'app-suma05',
+  templateUrl: './suma05.component.html',
+  styleUrls: ['./suma05.component.css'],
   encapsulation: ViewEncapsulation.None,
 })
-export class Resta05Component implements OnInit {
+export class Suma05Component implements OnInit {
   rain = false;
   fire = false;
+  closeResult: string;
   numero = 0;
   imagen1 = '';
   imagen2 = '';
@@ -24,7 +24,7 @@ export class Resta05Component implements OnInit {
   res = 0;
   resu: number;
   comodin: number;
-  constructor(private modalService: NgbModal) {  }
+  constructor(private modalService: NgbModal) { }
   snd = new Audio('assets/resta1.mp3'); // buffers automatically when created
   ngOnInit() {
     particlesJS.load('particles-js', 'assets/data/particles.json', null);
@@ -32,7 +32,6 @@ export class Resta05Component implements OnInit {
     this.azar();
     this.imagenCampo1();
     this.imagenCampo2();
-    // this.carga();
   }
   imagenCampo1() {
     if (this.imag === 1) {
@@ -57,17 +56,9 @@ export class Resta05Component implements OnInit {
     return this.imagen2;
   }
   azar() {
-    if (this.num1 < this.num2) {
-      this.comodin = this.num1;
-      this.num1 = this.num2;
-      this.num2 = this.comodin;
-      this.res = this.num1 - this.num2;
-      return[this.num1, this.num2, this.res];
-    }
-    this.res = this.num1 - this.num2;
-    console.log(this.num1, '-' , this.num2);
+    this.res = this.num1 + this.num2;
+    console.log(this.num1, '+' , this.num2);
     console.log('=', this.res);
-
   }
   validate() {
     if (this.res === this.resu) {
@@ -82,18 +73,15 @@ export class Resta05Component implements OnInit {
       this.imagenr = 'assets/' + this.folder + '/' + this.res + '.png';
       return [this.imagenr, this.fire];
     } else {
-      this.rain = true;
       this.imagenr = 'assets/error.png';
-      return [this.rain, this.imagenr];
+      return this.rain = true;
     }
   }
   openSm(content) {
     this.modalService.open(content, { size: 'lg', centered: true });
   }
+
   sonido() {
     this.snd.play();
   }
 }
-
-
-
