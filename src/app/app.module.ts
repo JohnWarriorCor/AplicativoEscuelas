@@ -10,7 +10,11 @@ import { Resta05Component } from './components/page/resta05/resta05.component';
 import { NivelesComponent } from './components/page/niveles/niveles.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Suma05Component } from './components/page/suma05/suma05.component';
+<<<<<<< HEAD
 import { Suma10Component } from './components/page/suma10/suma10.component';
+=======
+import { Suma20Component } from './components/page/suma20/suma20.component';
+>>>>>>> a4f6706b0becd5ae724cbb584fb788a4135caee7
 
 
 @NgModule({
@@ -21,7 +25,11 @@ import { Suma10Component } from './components/page/suma10/suma10.component';
     Resta05Component,
     Suma05Component,
     NivelesComponent,
+<<<<<<< HEAD
     Suma10Component
+=======
+    Suma20Component
+>>>>>>> a4f6706b0becd5ae724cbb584fb788a4135caee7
   ],
   imports: [
     BrowserModule,
