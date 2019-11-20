@@ -1,0 +1,91 @@
+<div class="container text-center" style="padding-top: 20px;">
+    <h1>Operación suma de [1 a 5]</h1>
+    <div class="container-fluid slide-in-elliptic-top-fwd" style="margin-top: 15%;margin-bottom: 5%;; background-color: #30503b; padding: 20px;border: solid 10px #aa6d41;">
+        <br>
+        <form #forma="ngForm">
+            <div class="row">
+                <div class="col text-center">
+                    <div style="width: 100px;" class="cuerpo">
+                        <svg style="width: 200px;">
+                          <symbol id="s-text">
+                            <text text-anchor="middle" x="50%" y="50%" dy=".35em">{{num1}}</text>
+                          </symbol>  
+                          <use xlink:href="#s-text" class="text"></use>
+                          <use xlink:href="#s-text" class="text"></use>
+                          <use xlink:href="#s-text" class="text"></use>
+                          <use xlink:href="#s-text" class="text"></use>
+                          <use xlink:href="#s-text" class="text"></use>
+                        </svg>
+                      </div>
+                </div>
+
+                <ng-template #content let-modal>
+                    <video *ngIf="fire" autoplay muted loop class="myVideo">
+                            <source src="assets/fireworks.mp4" type="video/mp4">
+                        </video>
+                        <video *ngIf="rain" autoplay muted loop class="myVideo">
+                            <source src="assets/rain.mp4" type="video/mp4">
+                        </video>
+                <div class="modal-header">
+                    <h4 class="Respuesta">Respuesta</h4>
+                    <button (click)="modal.dismiss('Cross click')" style="color: white;" class="btn btn-danger header-content">X</button>
+                </div>
+                <div class="modal-body">
+                    <div class="header-content text-center">
+                        <h3 *ngIf="fire" style="color: white;">Correcto el resultados es {{res}}, continúa con la siguiente operación</h3>
+                        <h3 *ngIf="rain" style="color: white;">Respuesta incorrecta, la respuesta de {{num1}} + {{num2}} es {{res}}, pero no te preocupes en la próxima vez lo lograrás </h3>
+                        <img src={{imagenr}} alt="" style="width: 50%; display: block; margin-left: auto; margin-right: auto;">
+                        <button (click)="modal.dismiss('Cross click')" class="btn btn-primary"  >Continuar</button>
+                    </div>
+                </div>
+            </ng-template>
+                <div class="col text-center">
+                    <img class="slide-in-fwd-center2" src="assets/suma.png" alt="" style="width: 100%;">
+                </div>
+                <div class="col text-center">
+                    <div style="width: 100px;" class="cuerpo">
+                        <svg style="width: 200px;">
+                          <symbol id="s-text2">
+                            <text text-anchor="middle" x="50%" y="50%" dy=".35em">{{num2}}</text>
+                          </symbol>  
+                          <use xlink:href="#s-text2" class="text"></use>
+                          <use xlink:href="#s-text2" class="text"></use>
+                          <use xlink:href="#s-text2" class="text"></use>
+                          <use xlink:href="#s-text2" class="text"></use>
+                          <use xlink:href="#s-text2" class="text"></use>
+                        </svg>
+                      </div>
+                </div>
+                <div class="col text-center">
+                    <img class="slide-in-fwd-center4" src="assets/igual.png" alt="" style="width: 100%;">
+                </div>
+
+
+                <div class="col text-center">
+                    <div style="width: 100px;" class="cuerpo">
+                        <svg style="width: 200px;">
+                          <symbol id="s-text3">
+                            <text text-anchor="middle" x="50%" y="50%" dy=".35em">{{res}}</text>
+                          </symbol>  
+                          <use xlink:href="#s-text3" class="text"></use>
+                          <use xlink:href="#s-text3" class="text"></use>
+                          <use xlink:href="#s-text3" class="text"></use>
+                          <use xlink:href="#s-text3" class="text"></use>
+                          <use xlink:href="#s-text3" class="text"></use>
+                        </svg>
+                      </div>
+                </div>
+            </div>
+
+
+            <div class="row fade-in">
+                <div class="col text-center">
+                    <button (click)="validate()" (click)="openSm(content)" style="margin: 5px;" routerLinkActive="router-link-active" class="btn btn-success">Respuesta</button>
+                    <!-- <button style="margin: 5px;" (click)="respuesta(resultado)" class="btn btn-success">Respuesta</button> -->
+                    <button style="margin: 5px;" [routerLink]="['/niveles']" routerLinkActive="router-link-active" class="btn btn-danger">Retroceder</button>
+                    <button class="btn btn" (click)="sonido()" style="color: white;"><i class="fas fa-redo" style="font-size: 25px"></i></button>
+                </div>
+            </div>
+        </form>
+        <br><br><br>
+    </div>
