@@ -10,6 +10,7 @@ import { Resta05Component } from './components/page/resta05/resta05.component';
 import { NivelesComponent } from './components/page/niveles/niveles.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Suma05Component } from './components/page/suma05/suma05.component';
+import { Suma10Component } from './components/page/suma10/suma10.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { Suma05Component } from './components/page/suma05/suma05.component';
     PortadaComponent,
     Resta05Component,
     Suma05Component,
-    NivelesComponent
+    NivelesComponent,
+    Suma10Component
   ],
   imports: [
     BrowserModule,
