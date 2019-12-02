@@ -1,0 +1,116 @@
+<nav class="navbar navbar-expand-lg navbar-light navLink">
+  <a class="navbar tresD" href="#">SUMA</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="tresD" [routerLink]="['/suma']" routerLinkActive="router-link-active" >5</a>
+      </li>
+      <li class="nav-item active">
+        <a class="tresD" [routerLink]="['/suma10']" routerLinkActive="router-link-active" >10</a>
+      </li>
+      <li class="nav-item active">
+        <a class="tresD" [routerLink]="['/suma20']" routerLinkActive="router-link-active" >20</a>
+      </li>
+      <li class="nav-item active">
+        <a class="tresD" [routerLink]="['/suma30']" routerLinkActive="router-link-active" >30</a>
+      </li>
+      <li class="nav-item active">
+        <a class="tresD" [routerLink]="['/suma40']" routerLinkActive="router-link-active" >40</a>
+      </li>
+      <li class="nav-item active">
+        <a class="tresD" [routerLink]="['/suma50']" routerLinkActive="router-link-active" >50</a>
+      </li>
+      <li class="nav-item active">
+        <a class="tresD" [routerLink]="['/suma60']" routerLinkActive="router-link-active" >60</a>
+      </li>
+      <li class="nav-item active">
+        <a class="tresD" [routerLink]="['/suma70']" routerLinkActive="router-link-active" >70</a>
+      </li>
+      <li class="nav-item active">
+        <a class="tresD" [routerLink]="['/suma80']" routerLinkActive="router-link-active" >80</a>
+      </li>
+      <li class="nav-item active">
+        <a class="tresD" [routerLink]="['/suma90']" routerLinkActive="router-link-active" >90</a>
+      </li>
+      <li class="nav-item active">
+        <a class="tresD" [routerLink]="['/suma100']" routerLinkActive="router-link-active" >100</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container text-center" style="padding-top: 20px;">
+  <!---->
+  <h1><span>S</span><span>U</span><span>M</span><span>A</span><span> </span><span>D</span><span>E</span><span> </span><span>1</span><span> </span><span>A</span><span> </span><span>80</span></h1>
+  <!---->
+  <div class="container-fluid slide-in-elliptic-top-fwd" style="margin-top: 10%;margin-bottom: 5%;; background-color: #30503b; padding: 20px;border: solid 10px #aa6d41;">
+      <br>
+      <form #forma="ngForm">
+          <div class="row">
+              <div class="col text-center">
+                  <div class="form-group slide-in-fwd-center1">
+                    <h1 class="tuclase text-center">{{num1}}</h1>
+                  </div>
+              </div>
+
+              <ng-template #content let-modal>
+                  <video *ngIf="fire" autoplay muted loop class="myVideo">
+                          <source src="assets/fireworks.mp4" type="video/mp4">
+                      </video>
+                      <video *ngIf="rain" autoplay muted loop class="myVideo">
+                          <source src="assets/rain.mp4" type="video/mp4">
+                      </video>
+              <div class="modal-header">
+                  <h4 class="Respuesta">Respuesta</h4>
+                  <button (click)="modal.dismiss('Cross click')" style="color: white;" class="btn btn-danger header-content">X</button>
+              </div>
+              <div class="modal-body">
+                  <div class="header-content text-center">
+                      <h3 *ngIf="fire" style="color: white;">Correcto el resultados es {{res}}, continúa con la siguiente operación</h3>
+                      <h3 *ngIf="rain" style="color: white;">Respuesta incorrecta, la respuesta de {{num1}} + {{num2}} es {{res}}, pero no te preocupes en la próxima vez lo lograrás </h3>
+                      <img src={{imagenr}} alt="" style="width: 50%; display: block; margin-left: auto; margin-right: auto;">
+                      <button (click)="modal.dismiss('Cross click')" class="btn btn-primary"  >Continuar</button>
+                  </div>
+              </div>
+          </ng-template>
+
+
+              <div class="col text-center">
+                  <div class="form-group slide-in-fwd-center2">
+                    <h1 class="tuclase text-center">+</h1>
+                  </div>
+              </div>
+              <div class="col text-center">
+                  <div class="form-group slide-in-fwd-center3">
+                    <h1 class="tuclase text-center">{{num2}}</h1>
+                  </div>
+              </div>
+              <div class="col text-center">
+                  <div class="form-group slide-in-fwd-center4">
+                    <h1 class="tuclase text-center">=</h1>
+                  </div>
+              </div>
+              <div class="col text-center">
+                  <div class="form-group slide-in-fwd-center5">
+                    <h1 *ngIf="!show" (click)="toggle()" class="tuclase text-center">?</h1>
+                    <input *ngIf="show" autocomplete="off" min="0" max="10" name="resultado" [(ngModel)]="resu" type="number" class="form-control text-center" id="inputCity" style="margin-top: 80px;font-size: 120px;color: black;">
+                  </div>
+                  <!--<input name="resultado" [(ngModel)]="resultado" type="text" class="form-control text-center" id="resu" style="margin-top: 20px;font-size: 58px;color: black;">-->
+              </div>
+          </div>
+
+
+          <div class="row fade-in">
+              <div class="col text-center">
+                  <button (click)="validate()" (click)="openSm(content)" style="margin: 5px;" routerLinkActive="router-link-active" class="btn btn-success">Respuesta</button>
+                  <!-- <button style="margin: 5px;" (click)="respuesta(resultado)" class="btn btn-success">Respuesta</button> -->
+                  <button style="margin: 5px;" [routerLink]="['/niveles']" routerLinkActive="router-link-active" class="btn btn-danger">Retroceder</button>
+                  <button class="btn btn" (click)="sonido()" style="color: white;"><i class="fas fa-redo" style="font-size: 25px"></i></button>
+              </div>
+          </div>
+      </form>
+      <br><br><br>
+  </div>
