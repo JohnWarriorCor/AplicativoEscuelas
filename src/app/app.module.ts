@@ -20,7 +20,11 @@ import { Suma70Component } from './components/page/suma70/suma70.component';
 import { Suma80Component } from './components/page/suma80/suma80.component';
 import { Suma90Component } from './components/page/suma90/suma90.component';
 import { Suma100Component } from './components/page/suma100/suma100.component';
+<<<<<<< HEAD
 import { Resta20Component } from './components/page/resta20/resta20.component';
+=======
+import { Resta10Component } from './components/page/resta10/resta10.component';
+>>>>>>> Jonathan
 
 
 @NgModule({
@@ -41,7 +45,11 @@ import { Resta20Component } from './components/page/resta20/resta20.component';
     Suma80Component,
     Suma90Component,
     Suma100Component,
+<<<<<<< HEAD
     Resta20Component
+=======
+    Resta10Component
+>>>>>>> Jonathan
   ],
   imports: [
     BrowserModule,
