@@ -2,6 +2,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home.component';
 import { PortadaComponent } from './components/portada.component';
 import { Resta05Component } from './components/page/resta05/resta05.component';
+import { Resta10Component } from './components/page/resta10/resta10.component';
 import { Suma05Component } from './components/page/suma05/suma05.component';
 import { NivelesComponent } from './components/page/niveles/niveles.component';
 import { Suma10Component } from './components/page/suma10/suma10.component';
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: 'suma90', component: Suma90Component },
   { path: 'suma100', component: Suma100Component },
   { path: 'resta', component: Resta05Component },
+  { path: 'resta10', component: Resta10Component },
   { path: 'niveles', component: NivelesComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'portada' }
 ];
