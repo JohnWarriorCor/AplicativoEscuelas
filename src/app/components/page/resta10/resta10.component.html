@@ -1,29 +1,68 @@
+<nav class="navbar navbar-expand-lg navbar-light navLink">
+    <a class="navbar tresD" href="#">RESTA</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="tresD" [routerLink]="['/resta']" routerLinkActive="router-link-active">5</a>
+            </li>
+            <li class="nav-item active">
+                <a class="tresD" [routerLink]="['/resta10']" routerLinkActive="router-link-active">10</a>
+            </li>
+            <li class="nav-item active">
+                <a class="tresD" [routerLink]="['/resta20']" routerLinkActive="router-link-active">20</a>
+            </li>
+            <li class="nav-item active">
+                <a class="tresD" [routerLink]="['/resta30']" routerLinkActive="router-link-active">30</a>
+            </li>
+            <li class="nav-item active">
+                <a class="tresD" [routerLink]="['/resta40']" routerLinkActive="router-link-active">40</a>
+            </li>
+            <li class="nav-item active">
+                <a class="tresD" [routerLink]="['/resta50']" routerLinkActive="router-link-active">50</a>
+            </li>
+            <li class="nav-item active">
+                <a class="tresD" [routerLink]="['/resta60']" routerLinkActive="router-link-active">60</a>
+            </li>
+            <li class="nav-item active">
+                <a class="tresD" [routerLink]="['/resta70']" routerLinkActive="router-link-active">70</a>
+            </li>
+            <li class="nav-item active">
+                <a class="tresD" [routerLink]="['/resta80']" routerLinkActive="router-link-active">80</a>
+            </li>
+            <li class="nav-item active">
+                <a class="tresD" [routerLink]="['/resta90']" routerLinkActive="router-link-active">90</a>
+            </li>
+            <li class="nav-item active">
+                <a class="tresD" [routerLink]="['/resta100']" routerLinkActive="router-link-active">100</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
 <div class="container text-center" style="padding-top: 20px;">
-    <h1>Operación Resta de [1 a 10]</h1>
-    <div class="container-fluid slide-in-elliptic-top-fwd" style="margin-top: 15%;margin-bottom: 5%;; background-color: #30503b; padding: 20px;border: solid 10px #aa6d41;">
+    <h1><span>R</span><span>E</span><span>S</span><span>T</span><span>A</span><span> </span><span>D</span><span>E</span><span> </span><span>0</span><span> </span><span>A</span><span> </span><span>1</span><span>0</span></h1>
+
+    <div class="container-fluid slide-in-elliptic-top-fwd" style="margin-top: 10%;margin-bottom: 5%;; background-color: #30503b; padding: 20px;border: solid 10px #aa6d41;">
         <br>
         <form #forma="ngForm">
             <div class="row">
                 <div class="col text-center">
-                    <img class="slide-in-fwd-center1" src={{imagen1}} alt="" style="width: 100%;">
-                    <div class="form-group bounce-in-top1">
-                        <input value="{{num1}}" readonly="true" type="text" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
-                    </div>
-                </div>
-                <div class="col text-center">
-                    <img class="slide-in-fwd-center2" src="assets/menos.png" alt="" style="width: 100%;">
-                    <div class="form-group bounce-in-top2">
-                        <input value="-" type="text" readonly="true" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
+                    <div class="form-group slide-in-fwd-center1">
+                        <h1 class="tuclase text-center">{{num1}}</h1>
                     </div>
                 </div>
 
                 <ng-template #content let-modal>
                     <video *ngIf="fire" autoplay muted loop class="myVideo">
-                              <source src="assets/fireworks.mp4" type="video/mp4">
-                          </video>
+                            <source src="assets/fireworks.mp4" type="video/mp4">
+                        </video>
                     <video *ngIf="rain" autoplay muted loop class="myVideo">
-                              <source src="assets/rain.mp4" type="video/mp4">
-                          </video>
+                            <source src="assets/rain.mp4" type="video/mp4">
+                        </video>
                     <div class="modal-header">
                         <h4 class="Respuesta">Respuesta</h4>
                         <button (click)="modal.dismiss('Cross click')" style="color: white;" class="btn btn-danger header-content">X</button>
@@ -40,26 +79,24 @@
 
 
                 <div class="col text-center">
-                    <img class="slide-in-fwd-center3" src={{imagen2}} alt="" style="width: 100%;">
-                    <div class="form-group bounce-in-top3">
-                        <input value="{{num2}}" readonly="true" type="text" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
+                    <div class="form-group slide-in-fwd-center2">
+                        <h1 class="tuclase text-center">-</h1>
                     </div>
                 </div>
                 <div class="col text-center">
-                    <img class="slide-in-fwd-center4" src="assets/igual.png" alt="" style="width: 100%;">
-                    <div class="form-group bounce-in-top4">
-                        <input value="=" type="text" readonly="true" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
+                    <div class="form-group slide-in-fwd-center3">
+                        <h1 class="tuclase text-center">{{num2}}</h1>
                     </div>
                 </div>
-
-
                 <div class="col text-center">
-
-
-                    <img class="slide-in-fwd-center5" src={{imagenr}} alt="" style="width: 100%;">
-                    <div class="form-group bounce-in-top5">
-                        <input autocomplete="off" name="resultado" [(ngModel)]="resu" type="number" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
-
+                    <div class="form-group slide-in-fwd-center4">
+                        <h1 class="tuclase text-center">=</h1>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <div class="form-group slide-in-fwd-center5">
+                        <h1 *ngIf="!show" (click)="toggle()" class="tuclase text-center">?</h1>
+                        <input *ngIf="show" autocomplete="off" min="0" max="10" name="resultado" [(ngModel)]="resu" type="number" class="form-control text-center tuclase" id="inputCity" style="margin-top: 75px;font-size: 200px;background-color: #30503b;padding: 0px;height: 195px;width: 300px;text-align: center;">
                     </div>
                     <!--<input name="resultado" [(ngModel)]="resultado" type="text" class="form-control text-center" id="resu" style="margin-top: 20px;font-size: 58px;color: black;">-->
                 </div>

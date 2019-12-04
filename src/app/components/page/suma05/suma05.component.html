@@ -1,46 +1,46 @@
 <nav class="navbar navbar-expand-lg navbar-light navLink">
-  <a class="navbar tresD" [routerLink]="['/nivel']" routerLinkActive="router-link-active" >SUMA</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar tresD" [routerLink]="['/nivel']" routerLinkActive="router-link-active">RESTA</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="tresD" [routerLink]="['/suma']" routerLinkActive="router-link-active" >5</a>
-      </li>
-      <li class="nav-item active">
-        <a class="tresD" [routerLink]="['/suma10']" routerLinkActive="router-link-active" >10</a>
-      </li>
-      <li class="nav-item active">
-        <a class="tresD" [routerLink]="['/suma20']" routerLinkActive="router-link-active" >20</a>
-      </li>
-      <li class="nav-item active">
-        <a class="tresD" [routerLink]="['/suma30']" routerLinkActive="router-link-active" >30</a>
-      </li>
-      <li class="nav-item active">
-        <a class="tresD" [routerLink]="['/suma40']" routerLinkActive="router-link-active" >40</a>
-      </li>
-      <li class="nav-item active">
-        <a class="tresD" [routerLink]="['/suma50']" routerLinkActive="router-link-active" >50</a>
-      </li>
-      <li class="nav-item active">
-        <a class="tresD" [routerLink]="['/suma60']" routerLinkActive="router-link-active" >60</a>
-      </li>
-      <li class="nav-item active">
-        <a class="tresD" [routerLink]="['/suma70']" routerLinkActive="router-link-active" >70</a>
-      </li>
-      <li class="nav-item active">
-        <a class="tresD" [routerLink]="['/suma80']" routerLinkActive="router-link-active" >80</a>
-      </li>
-      <li class="nav-item active">
-        <a class="tresD" [routerLink]="['/suma90']" routerLinkActive="router-link-active" >90</a>
-      </li>
-      <li class="nav-item active">
-        <a class="tresD" [routerLink]="['/suma100']" routerLinkActive="router-link-active" >100</a>
-      </li>
-    </ul>
-  </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="tresD" [routerLink]="['/resta']" routerLinkActive="router-link-active">5</a>
+            </li>
+            <li class="nav-item active">
+                <a class="tresD" [routerLink]="['/resta10']" routerLinkActive="router-link-active">10</a>
+            </li>
+            <li class="nav-item active">
+                <a class="tresD" [routerLink]="['/resta20']" routerLinkActive="router-link-active">20</a>
+            </li>
+            <li class="nav-item active">
+                <a class="tresD" [routerLink]="['/suma30']" routerLinkActive="router-link-active">30</a>
+            </li>
+            <li class="nav-item active">
+                <a class="tresD" [routerLink]="['/suma40']" routerLinkActive="router-link-active">40</a>
+            </li>
+            <li class="nav-item active">
+                <a class="tresD" [routerLink]="['/suma50']" routerLinkActive="router-link-active">50</a>
+            </li>
+            <li class="nav-item active">
+                <a class="tresD" [routerLink]="['/suma60']" routerLinkActive="router-link-active">60</a>
+            </li>
+            <li class="nav-item active">
+                <a class="tresD" [routerLink]="['/suma70']" routerLinkActive="router-link-active">70</a>
+            </li>
+            <li class="nav-item active">
+                <a class="tresD" [routerLink]="['/suma80']" routerLinkActive="router-link-active">80</a>
+            </li>
+            <li class="nav-item active">
+                <a class="tresD" [routerLink]="['/suma90']" routerLinkActive="router-link-active">90</a>
+            </li>
+            <li class="nav-item active">
+                <a class="tresD" [routerLink]="['/suma100']" routerLinkActive="router-link-active">100</a>
+            </li>
+        </ul>
+    </div>
 </nav>
 <div class="container text-center" style="padding-top: 20px;">
     <h1><span>S</span><span>U</span><span>M</span><span>A</span><span> </span><span>D</span><span>E</span><span> </span><span>0</span><span> </span><span>A</span><span> </span><span>5</span></h1>
@@ -59,22 +59,22 @@
                     <video *ngIf="fire" autoplay muted loop class="myVideo">
                             <source src="assets/fireworks.mp4" type="video/mp4">
                         </video>
-                        <video *ngIf="rain" autoplay muted loop class="myVideo">
+                    <video *ngIf="rain" autoplay muted loop class="myVideo">
                             <source src="assets/rain.mp4" type="video/mp4">
                         </video>
-                <div class="modal-header">
-                    <h4 class="Respuesta">Respuesta</h4>
-                    <button (click)="modal.dismiss('Cross click')" style="color: white;" class="btn btn-danger header-content">X</button>
-                </div>
-                <div class="modal-body">
-                    <div class="header-content text-center">
-                        <h3 *ngIf="fire" style="color: white;">Correcto el resultados es {{res}}, continúa con la siguiente operación</h3>
-                        <h3 *ngIf="rain" style="color: white;">Respuesta incorrecta, la respuesta de {{num1}} + {{num2}} es {{res}}, pero no te preocupes en la próxima vez lo lograrás </h3>
-                        <img src={{imagenr}} alt="" style="width: 50%; display: block; margin-left: auto; margin-right: auto;">
-                        <button (click)="modal.dismiss('Cross click')" class="btn btn-primary"  >Continuar</button>
+                    <div class="modal-header">
+                        <h4 class="Respuesta">Respuesta</h4>
+                        <button (click)="modal.dismiss('Cross click')" style="color: white;" class="btn btn-danger header-content">X</button>
                     </div>
-                </div>
-            </ng-template>
+                    <div class="modal-body">
+                        <div class="header-content text-center">
+                            <h3 *ngIf="fire" style="color: white;">Correcto el resultados es {{res}}, continúa con la siguiente operación</h3>
+                            <h3 *ngIf="rain" style="color: white;">Respuesta incorrecta, la respuesta de {{num1}} + {{num2}} es {{res}}, pero no te preocupes en la próxima vez lo lograrás </h3>
+                            <img src={{imagenr}} alt="" style="width: 50%; display: block; margin-left: auto; margin-right: auto;">
+                            <button (click)="modal.dismiss('Cross click')" class="btn btn-primary">Continuar</button>
+                        </div>
+                    </div>
+                </ng-template>
 
 
                 <div class="col text-center">

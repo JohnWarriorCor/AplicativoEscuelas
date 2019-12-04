@@ -1,13 +1,15 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 declare var particlesJS: any;
+
 @Component({
-  selector: 'app-resta10',
-  templateUrl: './resta10.component.html',
-  styleUrls: ['./resta10.component.css']
+  selector: 'app-resta40',
+  templateUrl: './resta40.component.html',
+  styleUrls: ['./resta40.component.css']
 })
 
-export class Resta10Component implements OnInit {
+export class Resta40Component implements OnInit {
+  
     // BOTON ASPECTOS - PREGUNTAS
     show = false;
     buttonName = '?';
@@ -19,8 +21,8 @@ export class Resta10Component implements OnInit {
   imagen2 = '';
   folder = '';
   imagenr = 'assets/res.png';
-  num1 = (Math.floor(Math.random() * 10) + 1);
-  num2 = (Math.floor(Math.random() * 10) + 1);
+  num1 = (Math.floor(Math.random() * 40) + 1);
+  num2 = (Math.floor(Math.random() * 40) + 1);
   imag =  Math.floor(Math.random() * 3) ;
   res = 0;
   resu: number;

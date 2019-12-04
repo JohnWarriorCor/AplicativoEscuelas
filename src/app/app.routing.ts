@@ -3,6 +3,15 @@ import { HomeComponent } from './components/home.component';
 import { PortadaComponent } from './components/portada.component';
 import { Resta05Component } from './components/page/resta05/resta05.component';
 import { Resta10Component } from './components/page/resta10/resta10.component';
+import { Resta20Component } from './components/page/resta20/resta20.component';
+import { Resta30Component } from './components/page/resta30/resta30.component';
+import { Resta40Component } from './components/page/resta40/resta40.component';
+import { Resta50Component } from './components/page/resta50/resta50.component';
+import { Resta60Component } from './components/page/resta60/resta60.component';
+import { Resta70Component } from './components/page/resta70/resta70.component';
+import { Resta80Component } from './components/page/resta80/resta80.component';
+import { Resta90Component } from './components/page/resta90/resta90.component';
+import { Resta100Component } from './components/page/resta100/resta100.component';
 import { Suma05Component } from './components/page/suma05/suma05.component';
 import { NivelesComponent } from './components/page/niveles/niveles.component';
 import { Suma10Component } from './components/page/suma10/suma10.component';
@@ -31,7 +40,17 @@ const routes: Routes = [
   { path: 'suma90', component: Suma90Component },
   { path: 'suma100', component: Suma100Component },
   { path: 'resta', component: Resta05Component },
+  { path: 'resta05', component: Resta05Component },
   { path: 'resta10', component: Resta10Component },
+  { path: 'resta20', component: Resta20Component },
+  { path: 'resta30', component: Resta30Component },
+  { path: 'resta40', component: Resta40Component },
+  { path: 'resta50', component: Resta50Component },
+  { path: 'resta60', component: Resta60Component },
+  { path: 'resta70', component: Resta70Component },
+  { path: 'resta80', component: Resta80Component },
+  { path: 'resta90', component: Resta90Component },
+  { path: 'resta100', component: Resta100Component },
   { path: 'niveles', component: NivelesComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'portada' }
 ];
