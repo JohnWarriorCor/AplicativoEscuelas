@@ -89,6 +89,7 @@ export class Suma10Component implements OnInit {
       return this.rain = true;
     }
   }
+
   openSm(content) {
     this.modalService.open(content, { size: 'lg', centered: true });
   }

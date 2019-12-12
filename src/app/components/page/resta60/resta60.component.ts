@@ -9,7 +9,6 @@ declare var particlesJS: any;
 })
 
 export class Resta60Component implements OnInit {
-  
     // BOTON ASPECTOS - PREGUNTAS
     show = false;
     buttonName = '?';

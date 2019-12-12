@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light navLink">
-    <a class="navbar tresD" [routerLink]="['/nivel']" routerLinkActive="router-link-active">RESTA</a>
+    <a class="navbar tresD" [routerLink]="['/nivel']" routerLinkActive="router-link-active">SUMA</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -7,13 +7,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="tresD" [routerLink]="['/resta']" routerLinkActive="router-link-active">5</a>
+                <a class="tresD" [routerLink]="['/suma05']" routerLinkActive="router-link-active">5</a>
             </li>
             <li class="nav-item active">
-                <a class="tresD" [routerLink]="['/resta10']" routerLinkActive="router-link-active">10</a>
+                <a class="tresD" [routerLink]="['/suma10']" routerLinkActive="router-link-active">10</a>
             </li>
             <li class="nav-item active">
-                <a class="tresD" [routerLink]="['/resta20']" routerLinkActive="router-link-active">20</a>
+                <a class="tresD" [routerLink]="['/suma20']" routerLinkActive="router-link-active">20</a>
             </li>
             <li class="nav-item active">
                 <a class="tresD" [routerLink]="['/suma30']" routerLinkActive="router-link-active">30</a>
@@ -115,7 +115,8 @@
                     <button (click)="validate()" (click)="openSm(content)" style="margin: 5px;" routerLinkActive="router-link-active" class="btn btn-success">Respuesta</button>
                     <!-- <button style="margin: 5px;" (click)="respuesta(resultado)" class="btn btn-success">Respuesta</button> -->
                     <button style="margin: 5px;" [routerLink]="['/niveles']" routerLinkActive="router-link-active" class="btn btn-danger">Retroceder</button>
-                    <button class="btn btn" (click)="sonido()" style="color: white;"><i class="fas fa-redo" style="font-size: 25px"></i></button>
+                    <button class="btn btn" (click)="sonido()" style="color: white;"><i href="javascript:location.reload()" class="fas fa-redo" style="font-size: 25px"></i></button>
+                    <a href="javascript:location.reload()">Siguiente</a>
                 </div>
             </div>
         </form>

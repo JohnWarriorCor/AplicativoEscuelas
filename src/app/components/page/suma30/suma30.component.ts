@@ -23,7 +23,6 @@ export class Suma30Component implements OnInit {
   imagenr = 'assets/res.png';
   num1 = (Math.floor(Math.random() * 30) + 1);
   num2 = (Math.floor(Math.random() * 30) + 1);
-  imag =  Math.floor(Math.random() * 3) ;
   res = 0;
   resu: number;
   comodin: number;
@@ -33,8 +32,6 @@ export class Suma30Component implements OnInit {
     particlesJS.load('particles-js', 'assets/data/particles.json', null);
     // this.snd.play();
     this.azar();
-    this.imagenCampo1();
-    this.imagenCampo2();
   }
   toggle() {
     this.show = !this.show;
@@ -47,28 +44,7 @@ export class Suma30Component implements OnInit {
       this.buttonName = '<h1 class="tuclase text-center">?</h1>';
     }
   }
-  imagenCampo1() {
-    if (this.imag === 1) {
-      this.folder = 'apple';
-    } else if (this.imag === 2) {
-      this.folder = 'car';
-    } else {
-      this.folder = 'ball';
-    }
-    this.imagen1 = 'assets/' + this.folder + '/' + this.num1 + '.png';
-    return this.imagen1;
-  }
-  imagenCampo2() {
-    if (this.imag === 1) {
-      this.folder = 'apple';
-    } else if (this.imag === 2) {
-      this.folder = 'car';
-    } else {
-      this.folder = 'ball';
-    }
-    this.imagen2 = 'assets/' + this.folder + '/' + this.num2 + '.png';
-    return this.imagen2;
-  }
+
   azar() {
     this.res = this.num1 + this.num2;
     console.log(this.num1, '+' , this.num2);
@@ -77,14 +53,6 @@ export class Suma30Component implements OnInit {
   validate() {
     if (this.res === this.resu) {
       this.fire = true;
-      if (this.imag === 1) {
-        this.folder = 'apple';
-      } else if (this.imag === 2) {
-        this.folder = 'car';
-      } else {
-        this.folder = 'ball';
-      }
-      this.imagenr = 'assets/' + this.folder + '/' + this.res + '.png';
       return [this.imagenr, this.fire];
     } else {
       this.imagenr = 'assets/error.png';

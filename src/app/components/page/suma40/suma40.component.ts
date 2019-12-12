@@ -7,6 +7,7 @@ declare var particlesJS: any;
   templateUrl: './suma40.component.html',
   styleUrls: ['./suma40.component.css']
 })
+
 export class Suma40Component implements OnInit {
 
    // BOTON ASPECTOS - PREGUNTAS
