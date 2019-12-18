@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light navLink">
-    <a class="navbar tresD" [routerLink]="['/nivel']" routerLinkActive="router-link-active">SUMA</a>
+    <a class="navbar tresD" style="margin-top: 2px; margin-bottom: 0px;" [routerLink]="['/nivel']" routerLinkActive="router-link-active">SUMA</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -42,9 +42,9 @@
         </ul>
     </div>
 </nav>
-<div class="container text-center" style="padding-top: 20px;">
+<div class="container text-center" style="margin-top: 0px; margin-bottom: 2px;">
     <h1><span>S</span><span>U</span><span>M</span><span>A</span><span> </span><span>D</span><span>E</span><span> </span><span>0</span><span> </span><span>A</span><span> </span><span>5</span></h1>
-    <div class="container-fluid slide-in-elliptic-top-fwd" style="margin-top: 15%;margin-bottom: 5%;; background-color: #30503b; padding: 20px;border: solid 10px #aa6d41;">
+    <div class="container-fluid slide-in-elliptic-top-fwd" style="margin-top: 1%; width: 90%; height: 60%; margin-bottom: 3%;; background-color: #30503b; padding: 5px;border: solid 10px #aa6d41;">
         <br>
         <form #forma="ngForm">
             <div class="row">
@@ -71,6 +71,7 @@
                             <h3 *ngIf="fire" style="color: white;">Correcto el resultados es {{res}}, continúa con la siguiente operación</h3>
                             <h3 *ngIf="rain" style="color: white;">Respuesta incorrecta, la respuesta de {{num1}} + {{num2}} es {{res}}, pero no te preocupes en la próxima vez lo lograrás </h3>
                             <img src={{imagenr}} alt="" style="width: 50%; display: block; margin-left: auto; margin-right: auto;">
+                            <img src={{imagenr2}} alt="" style="width: 50%; display: block; margin-left: auto; margin-right: auto;">
                             <button (click)="modal.dismiss('Cross click')" class="btn btn-primary">Continuar</button>
                         </div>
                     </div>

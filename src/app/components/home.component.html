@@ -1,12 +1,12 @@
 <div id="particles-js"></div>
-<div class="container" style="padding-top: 20px;">
-  <div class="container-fluid" style="margin-top: 5%; margin-bottom: 10%;background-color: rgb(247, 138, 119);">
-    <h1 class="display-4 titulo h11">App Escuela</h1>
-    <!-- NUMERO CON PLANTILLA CSS -->
-    <div style="width: 100px;" class="cuerpo">
-      <svg>
+<div class="container" style="padding-top: 5px;">
+    <div class="container-fluid" style="margin-top: 2%; margin-bottom: 10%;background-color: rgb(247, 138, 119);">
+        <h1 class="display-4 titulo h11">App Escuela</h1>
+        <!-- NUMERO CON PLANTILLA CSS -->
+        <div style="width: 100px; height: 50px;" class="cuerpo">
+            <svg>
         <symbol id="s-text">
-          <text text-anchor="middle" x="50%" y="50%" dy=".35em">1234</text>
+          <text text-anchor="middle" x="50%" y="50%" dy=".35em"></text>
         </symbol>  
         <use xlink:href="#s-text" class="text"></use>
         <use xlink:href="#s-text" class="text"></use>
@@ -14,30 +14,30 @@
         <use xlink:href="#s-text" class="text"></use>
         <use xlink:href="#s-text" class="text"></use>
       </svg>
-    </div>
-    <!-- NUMERO CON PLANTILLA CSS -->
-    <br>
-    <div class="row">
-      <div class="col">
-        <h5 class="font-weight-bold text-uppercase" style="color: white;">formulario</h5>
-        <form>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputEmail4" style="color: white;"><i style="color: white;" class="fas fa-user-check"></i> Nombre</label>
-                <input type="email" class="form-control" id="inputEmail4" placeholder="...">
-              </div>
-              <div class="form-group col-md-6">
-                <label for="inputPassword4" style="color: white;"><i style="color: white;" class="fas fa-user-tag"></i> Apellido</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="...">
-              </div>
-            </div>
-            <div class="form-group">
-                <label for="inputAddress2" style="color: white;"><i style="color: white;" class="fas fa-university"></i> Instittución</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Instittución educativa">
-            </div>
-            <div class="form-group">
-              <label for="inputState" style="color: white;"><i style="color: white;" class="fas fa-graduation-cap"></i> Grado</label>
-                <select id="inputState" class="form-control">
+        </div>
+        <!-- NUMERO CON PLANTILLA CSS -->
+        <br>
+        <div class="row">
+            <div class="col">
+                <h5 class="font-weight-bold text-uppercase" style="color: white;">formulario</h5>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4" style="color: white;"><i style="color: white;" class="fas fa-user-check"></i> Nombre</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="...">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4" style="color: white;"><i style="color: white;" class="fas fa-user-tag"></i> Apellido</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="...">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress2" style="color: white;"><i style="color: white;" class="fas fa-university"></i> Instittución</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Instittución educativa">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputState" style="color: white;"><i style="color: white;" class="fas fa-graduation-cap"></i> Grado</label>
+                        <select id="inputState" class="form-control">
                   <option selected>Seleccione el grado</option>
                   <option>Primero</option>
                   <option>Segundo</option>
@@ -45,34 +45,34 @@
                   <option>Cuarto</option>
                   <option>Quinto</option>
                 </select>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity" style="color: white;"><i style="color: white;" class="fas fa-map-marker-alt"></i> Ciudad</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputZip" style="color: white;"><i style="color: white;" class="fas fa-sort-numeric-up-alt"></i> Edad</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                    </div>
+                    <button type="button" style="margin: 5px;" [routerLink]="['/niveles']" class="btn btn-primary">Jugar</button>
+                    <button style="margin: 5px;" [routerLink]="['/portada']" class="btn btn-danger">Retroceder</button>
+                    <button class="btn btn" (click)="sonido()"><i class="fas fa-volume-up" style="font-size: 25px"></i></button>
+                </form>
             </div>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="inputCity" style="color: white;"><i style="color: white;" class="fas fa-map-marker-alt"></i> Ciudad</label>
-                <input type="text" class="form-control" id="inputCity">
-              </div>
-              <div class="form-group col-md-6">
-                <label for="inputZip" style="color: white;"><i style="color: white;" class="fas fa-sort-numeric-up-alt"></i> Edad</label>
-                <input type="text" class="form-control" id="inputZip">
-              </div>
+            <div class="col">
+                <h5 class="font-weight-bold text-uppercase" style="color: white;">instrucciones</h5>
+                <p class="text-justify" style="color: white;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit omnis quod mollitia. Sed autem, rerum eligendi debitis obcaecati provident vero tenetur neque laborum asperiores. Esse perferendis officia quaerat et expedita.
+                </p>
+                <p class="text-justify" style="color: white;">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, omnis nulla molestias enim ab odit pariatur neque quia ea quod blanditiis, minus non natus itaque reprehenderit distinctio sint id cum.
+                </p>
+                <div class="text-center">
+                    <img src="assets/mates1.png" style="width: 45%;" alt="Matematicas">
+                </div>
             </div>
-            <button type="button" style="margin: 5px;" [routerLink]="['/niveles']"  class="btn btn-primary">Jugar</button>
-            <button style="margin: 5px;" [routerLink]="['/portada']" class="btn btn-danger">Retroceder</button>
-            <button class="btn btn" (click)="sonido()" ><i class="fas fa-volume-up" style="font-size: 25px"></i></button>
-          </form>
-      </div>
-      <div class="col">
-        <h5 class="font-weight-bold text-uppercase" style="color: white;">instrucciones</h5>
-        <p class="text-justify" style="color: white;">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit omnis quod mollitia. Sed autem, rerum eligendi debitis obcaecati provident vero tenetur neque laborum asperiores. Esse perferendis officia quaerat et expedita.
-        </p>
-        <p class="text-justify" style="color: white;">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, omnis nulla molestias enim ab odit pariatur neque quia ea quod blanditiis, minus non natus itaque reprehenderit distinctio sint id cum.
-        </p>
-        <div class="text-center">
-            <img src="assets/mates1.png" style="width: 45%;" alt="Matematicas">
         </div>
-      </div>
     </div>
-  </div>
 </div>
