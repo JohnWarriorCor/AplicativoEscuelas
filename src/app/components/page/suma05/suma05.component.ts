@@ -74,8 +74,7 @@ export class Suma05Component implements OnInit {
       return [this.imagenr, this.fire];
     } else {
       this.rain = true;
-      this.imagenr = 'assets/' + this.folder + '/' + this.res + '.png';
-      return [this.imagenr, this.rain];
+      return [this.rain];
     }
   }
   openSm(content) {
