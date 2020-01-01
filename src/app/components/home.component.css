@@ -1,21 +1,21 @@
 .contenedor {
-	width: 90%;
-	max-width: 900px;
+    width: 90%;
+    max-width: 900px;
     background-size: cover;
-    background-position:center;
-	margin-left: auto; 
-	margin-right: auto;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
     padding: 20px 30px;
     position: relative;
     z-index: 99;
-    height: 50%;
+    height: 30%;
     border: 3px solid #e75758;
     background-color: #e97e7f;
 }
 
 .contenido-descripcion {
     width: 60%;
-    height: 100%;
+    height: 80%;
     align-items: center;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .contenido-descripcion .titulo span:first-child {
-    font-size: 50px; 
+    font-size: 50px;
     display: block;
     font-weight: 300;
 }
@@ -34,14 +34,17 @@
     font-size: 100px;
 }
 
-.titulo{
+.titulo {
     color: white;
     text-transform: uppercase;
-    font-size: 50px; 
+    font-size: 50px;
     display: block;
     font-weight: 300;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    ;
 }
-.descripcion{
+
+.descripcion {
     color: white;
+    height: 50%;
 }

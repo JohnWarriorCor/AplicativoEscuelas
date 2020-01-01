@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light navLink">
-    <a class="navbar tresD" style="margin-top: 2px; margin-bottom: 0px;" [routerLink]="['/nivel']" routerLinkActive="router-link-active">SUMA</a>
+    <a class="navbar tresD" style="margin-top: 0px; margin-bottom: 0px;" [routerLink]="['/nivel']" routerLinkActive="router-link-active">SUMA</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -42,14 +42,14 @@
         </ul>
     </div>
 </nav>
-<div class="container text-center" style="margin-top: 0px; margin-bottom: 2px;">
+<div class="container text-center" style="margin-top: 0px; margin-bottom: 0px;">
     <h1><span>S</span><span>U</span><span>M</span><span>A</span><span> </span><span>D</span><span>E</span><span> </span><span>0</span><span> </span><span>A</span><span> </span><span>5</span></h1>
-    <div class="container-fluid slide-in-elliptic-top-fwd" style="margin-top: 1%; width: 90%; height: 60%; margin-bottom: 3%;; background-color: #30503b; padding: 5px;border: solid 10px #aa6d41;">
-        <br>
+    <div class="container-fluid slide-in-elliptic-top-fwd" style="margin-top: 1%; width: 98%; height: 1%; margin-bottom:2%; background-color: #30503b; padding: 2%; padding-top: 2%; border: solid 10px #aa6d41;">
+
         <form #forma="ngForm">
             <div class="row">
                 <div class="col text-center">
-                    <img class="slide-in-fwd-center1" src={{imagen1}} alt="" style="width: 100%;">
+                    <img class="slide-in-fwd-center1" src={{imagen1}} alt="" style="width: 80%;">
                     <div class="form-group bounce-in-top1">
                         <input value="{{num1}}" readonly="true" type="text" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
                     </div>
@@ -79,19 +79,19 @@
 
 
                 <div class="col text-center">
-                    <img class="slide-in-fwd-center2" src="assets/suma.png" alt="" style="width: 100%;">
+                    <img class="slide-in-fwd-center2" src="assets/suma.png" alt="" style="width: 80%; ">
                     <div class="form-group bounce-in-top2">
                         <input value="+" type="text" readonly="true" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
                     </div>
                 </div>
                 <div class="col text-center">
-                    <img class="slide-in-fwd-center3" src={{imagen2}} alt="" style="width: 100%;">
+                    <img class="slide-in-fwd-center3" src={{imagen2}} alt="" style="width: 80%; ">
                     <div class="form-group bounce-in-top3">
                         <input value="{{num2}}" readonly="true" type="text" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
                     </div>
                 </div>
                 <div class="col text-center">
-                    <img class="slide-in-fwd-center4" src="assets/igual.png" alt="" style="width: 100%;">
+                    <img class="slide-in-fwd-center4" src="assets/igual.png" alt="" style="width: 80%;">
                     <div class="form-group bounce-in-top4">
                         <input value="=" type="text" readonly="true" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
                     </div>
@@ -100,8 +100,7 @@
 
                 <div class="col text-center">
 
-
-                    <img class="slide-in-fwd-center5" src={{imagenr}} alt="" style="width: 100%;">
+                    <img class="slide-in-fwd-center5" src={{imagenr}} alt="" style="width: 80%;">
                     <div class="form-group bounce-in-top5">
                         <input autocomplete="off" min="0" max="10" name="resultado" [(ngModel)]="resu" type="number" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
 
@@ -121,5 +120,5 @@
                 </div>
             </div>
         </form>
-        <br><br><br>
+
     </div>
