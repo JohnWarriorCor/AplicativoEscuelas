@@ -1,13 +1,13 @@
 <nav class="navbar navbar-expand-lg navbar-light navLink">
-    <a class="navbar tresD" [routerLink]="['/nivel']" routerLinkActive="router-link-active">RESTA</a>
+    <a class="navbar tresD" style="margin-top: 0px; margin-bottom: 0px;" [routerLink]="['/nivel']" routerLinkActive="router-link-active">RESTA</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="tresD" [routerLink]="['/resta']" routerLinkActive="router-link-active">5</a>
+                <a class="tresD" [routerLink]="['/resta05']" routerLinkActive="router-link-active">5</a>
             </li>
             <li class="nav-item active">
                 <a class="tresD" [routerLink]="['/resta10']" routerLinkActive="router-link-active">10</a>
@@ -19,56 +19,49 @@
                 <a class="tresD" [routerLink]="['/resta30']" routerLinkActive="router-link-active">30</a>
             </li>
             <li class="nav-item active">
-                <a class="tresD" [routerLink]="['/suma40']" routerLinkActive="router-link-active">40</a>
+                <a class="tresD" [routerLink]="['/resta40']" routerLinkActive="router-link-active">40</a>
             </li>
             <li class="nav-item active">
-                <a class="tresD" [routerLink]="['/suma50']" routerLinkActive="router-link-active">50</a>
+                <a class="tresD" [routerLink]="['/resta50']" routerLinkActive="router-link-active">50</a>
             </li>
             <li class="nav-item active">
-                <a class="tresD" [routerLink]="['/suma60']" routerLinkActive="router-link-active">60</a>
+                <a class="tresD" [routerLink]="['/resta60']" routerLinkActive="router-link-active">60</a>
             </li>
             <li class="nav-item active">
-                <a class="tresD" [routerLink]="['/suma70']" routerLinkActive="router-link-active">70</a>
+                <a class="tresD" [routerLink]="['/resta70']" routerLinkActive="router-link-active">70</a>
             </li>
             <li class="nav-item active">
-                <a class="tresD" [routerLink]="['/suma80']" routerLinkActive="router-link-active">80</a>
+                <a class="tresD" [routerLink]="['/resta80']" routerLinkActive="router-link-active">80</a>
             </li>
             <li class="nav-item active">
-                <a class="tresD" [routerLink]="['/suma90']" routerLinkActive="router-link-active">90</a>
+                <a class="tresD" [routerLink]="['/resta90']" routerLinkActive="router-link-active">90</a>
             </li>
             <li class="nav-item active">
-                <a class="tresD" [routerLink]="['/suma100']" routerLinkActive="router-link-active">100</a>
+                <a class="tresD" [routerLink]="['/resta100']" routerLinkActive="router-link-active">100</a>
             </li>
         </ul>
     </div>
 </nav>
-
-<div class="container text-center" style="padding-top: 20px;">
+<div class="container text-center" style="margin-top: 0px; margin-bottom: 0px;">
     <h1><span>R</span><span>E</span><span>S</span><span>T</span><span>A</span><span> </span><span>D</span><span>E</span><span> </span><span>0</span><span> </span><span>A</span><span> </span><span>5</span></h1>
-    <div class="container-fluid slide-in-elliptic-top-fwd" style="margin-top: 15%;margin-bottom: 5%;; background-color: #30503b; padding: 20px;border: solid 10px #aa6d41;">
-        <br>
+    <div class="container-fluid slide-in-elliptic-top-fwd" style="margin-top: 1%; width: 98%; height: 1%; margin-bottom:2%; background-color: #30503b; padding: 2%; padding-top: 2%; border: solid 10px #aa6d41;">
+
         <form #forma="ngForm">
             <div class="row">
                 <div class="col text-center">
-                    <img class="slide-in-fwd-center1" src={{imagen1}} alt="" style="width: 100%;">
+                    <img class="slide-in-fwd-center1" src={{imagen1}} alt="" style="width: 80%;">
                     <div class="form-group bounce-in-top1">
                         <input value="{{num1}}" readonly="true" type="text" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
-                    </div>
-                </div>
-                <div class="col text-center">
-                    <img class="slide-in-fwd-center2" src="assets/menos.png" alt="" style="width: 100%;">
-                    <div class="form-group bounce-in-top2">
-                        <input value="-" type="text" readonly="true" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
                     </div>
                 </div>
 
                 <ng-template #content let-modal>
                     <video *ngIf="fire" autoplay muted loop class="myVideo">
-                                <source src="assets/fireworks.mp4" type="video/mp4">
-                            </video>
+                            <source src="assets/fireworks.mp4" type="video/mp4">
+                        </video>
                     <video *ngIf="rain" autoplay muted loop class="myVideo">
-                                <source src="assets/rain.mp4" type="video/mp4">
-                            </video>
+                            <source src="assets/rain.mp4" type="video/mp4">
+                        </video>
                     <div class="modal-header">
                         <h4 class="Respuesta">Respuesta</h4>
                         <button (click)="modal.dismiss('Cross click')" style="color: white;" class="btn btn-danger header-content">X</button>
@@ -76,8 +69,14 @@
                     <div class="modal-body">
                         <div class="header-content text-center">
                             <h3 *ngIf="fire" style="color: white;">Correcto el resultados es {{res}}, continúa con la siguiente operación</h3>
-                            <h3 *ngIf="rain" style="color: white;">Respuesta incorrecta, la respuesta de {{num1}} - {{num2}} es {{res}}, pero no te preocupes en la próxima vez lo lograrás </h3>
-                            <img src={{imagenr}} alt="" style="width: 50%; display: block; margin-left: auto; margin-right: auto;">
+                            <h3 *ngIf="rain" style="color: white;">Piensalo de Nuevo! </h3>
+                            <img src={{imagen11}} alt="" style="width:20%; display: inline; margin-left: auto; margin-right: auto; padding-right: 2%;">
+                            <img src={{imagmenos}} alt="" style="width:16%; display: inline; margin-left: auto; margin-right: auto; padding-right: 2%; ">
+                            <img src={{imagen12}} alt="" style=" width:20%; display: inline; margin-left: auto; margin-right: auto; padding-right: 2%;">
+                            <img src={{imagigual}} alt="" style="width: 16%; display: inline; margin-left: auto; margin-right: auto; padding-right: 2%;">
+                            <img src={{imagenr}} alt="" style="width: 20%; display: inline; margin-left: auto; margin-right: auto; padding-right: 2%;">
+                            <br>
+                            <br>
                             <button (click)="modal.dismiss('Cross click')" class="btn btn-primary">Continuar</button>
                         </div>
                     </div>
@@ -85,13 +84,19 @@
 
 
                 <div class="col text-center">
-                    <img class="slide-in-fwd-center3" src={{imagen2}} alt="" style="width: 100%;">
+                    <img class="slide-in-fwd-center2" src="assets/menos.png" alt="" style="width: 80%; ">
+                    <div class="form-group bounce-in-top2">
+                        <input value="-" type="text" readonly="true" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <img class="slide-in-fwd-center3" src={{imagen2}} alt="" style="width: 80%; ">
                     <div class="form-group bounce-in-top3">
                         <input value="{{num2}}" readonly="true" type="text" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
                     </div>
                 </div>
                 <div class="col text-center">
-                    <img class="slide-in-fwd-center4" src="assets/igual.png" alt="" style="width: 100%;">
+                    <img class="slide-in-fwd-center4" src="assets/igual.png" alt="" style="width: 80%;">
                     <div class="form-group bounce-in-top4">
                         <input value="=" type="text" readonly="true" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
                     </div>
@@ -100,10 +105,9 @@
 
                 <div class="col text-center">
 
-
-                    <img class="slide-in-fwd-center5" src={{imagenr}} alt="" style="width: 100%;">
+                    <img class="slide-in-fwd-center5" src={{imagenr}} alt="" style="width: 80%;">
                     <div class="form-group bounce-in-top5">
-                        <input autocomplete="off" name="resultado" [(ngModel)]="resu" type="number" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
+                        <input autocomplete="off" min="0" max="10" name="resultado" [(ngModel)]="resu" type="number" class="form-control text-center" id="inputCity" style="margin-top: 20px;font-size: 58px;color: black;">
 
                     </div>
                     <!--<input name="resultado" [(ngModel)]="resultado" type="text" class="form-control text-center" id="resu" style="margin-top: 20px;font-size: 58px;color: black;">-->
@@ -116,9 +120,10 @@
                     <button (click)="validate()" (click)="openSm(content)" style="margin: 5px;" routerLinkActive="router-link-active" class="btn btn-success">Respuesta</button>
                     <!-- <button style="margin: 5px;" (click)="respuesta(resultado)" class="btn btn-success">Respuesta</button> -->
                     <button style="margin: 5px;" [routerLink]="['/niveles']" routerLinkActive="router-link-active" class="btn btn-danger">Retroceder</button>
-                    <button class="btn btn" (click)="sonido()" style="color: white;"><i class="fas fa-redo" style="font-size: 25px"></i></button>
+                    <button class="btn btn" (click)="sonido()" style="color: white;"><i href="javascript:location.reload()" class="fas fa-redo" style="font-size: 25px"></i></button>
+                    <a href="javascript:location.reload()">Siguiente</a>
                 </div>
             </div>
         </form>
-        <br><br><br>
+
     </div>

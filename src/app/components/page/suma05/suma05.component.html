@@ -69,9 +69,14 @@
                     <div class="modal-body">
                         <div class="header-content text-center">
                             <h3 *ngIf="fire" style="color: white;">Correcto el resultados es {{res}}, continúa con la siguiente operación</h3>
-                            <h3 *ngIf="rain" style="color: white;">Respuesta incorrecta, la respuesta de {{num1}} + {{num2}} es {{res}}, pero no te preocupes en la próxima vez lo lograrás </h3>
-                            <img src={{imagenr}} alt="" style="width: 50%; display: block; margin-left: auto; margin-right: auto;">
-
+                            <h3 *ngIf="rain" style="color: white;">Piensalo de Nuevo! </h3>
+                            <img src={{imagen11}} alt="" style="width:20%; display: inline; margin-left: auto; margin-right: auto; padding-right: 2%;">
+                            <img src="assets/suma.png" alt="" style="width:16%; display: inline; margin-left: auto; margin-right: auto; padding-right: 2%; ">
+                            <img src={{imagen12}} alt="" style=" width:20%; display: inline; margin-left: auto; margin-right: auto; padding-right: 2%;">
+                            <img src="assets/igual.png" alt="" style="width: 16%; display: inline; margin-left: auto; margin-right: auto; padding-right: 2%;">
+                            <img src={{imagenr}} alt="" style="width: 20%; display: inline; margin-left: auto; margin-right: auto; padding-right: 2%;">
+                            <br>
+                            <br>
                             <button (click)="modal.dismiss('Cross click')" class="btn btn-primary">Continuar</button>
                         </div>
                     </div>

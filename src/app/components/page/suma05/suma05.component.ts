@@ -16,11 +16,15 @@ export class Suma05Component implements OnInit {
   numero = 0;
   imagen1 = '';
   imagen2 = '';
+  imagen11 = '';
+  imagen12 = '';
   folder = '';
   imagenr = 'assets/res.png';
   num1 = (Math.floor(Math.random() * 5) + 1);
   num2 = (Math.floor(Math.random() * 5) + 1);
   imag =  Math.floor(Math.random() * 3) ;
+  num11 = this.num1;
+  num12 = this.num2;
   res = 0;
   resu: number;
   comodin: number;
@@ -33,6 +37,7 @@ export class Suma05Component implements OnInit {
     this.imagenCampo1();
     this.imagenCampo2();
   }
+
   imagenCampo1() {
     if (this.imag === 1) {
       this.folder = 'apple';
@@ -59,6 +64,45 @@ export class Suma05Component implements OnInit {
     this.res = this.num1 + this.num2;
     console.log(this.num1, '+' , this.num2);
     console.log('=', this.res);
+    if (this.num11 === 1){
+      this.imagen11 =  'assets/' + this.folder + '/' + 'uno.png';
+    } else {
+      if (this.num11 === 2){
+        this.imagen11 =  'assets/' + this.folder + '/' + 'dos.png';
+      } else {
+        if (this.num11 === 3){
+          this.imagen11 =  'assets/' + this.folder + '/' + 'tresi.png';
+        } else {
+          if (this.num11 === 4){
+            this.imagen11 =  'assets/' + this.folder + '/' + 'cuatro.png';
+          } else {
+            if (this.num11 === 5){
+              this.imagen11 =  'assets/' + this.folder + '/' + 'cinco.png';
+            }
+          }
+        }
+      }
+    }
+    if (this.num12 === 1){
+      this.imagen12 =  'assets/' + this.folder + '/' + 'uno.png';
+    } else {
+      if (this.num12 === 2){
+        this.imagen12 =  'assets/' + this.folder + '/' + 'dos.png';
+      } else {
+        if (this.num12 === 3){
+          this.imagen12 =  'assets/' + this.folder + '/' + 'tresi.png';
+        } else {
+          if (this.num12 === 4){
+            this.imagen12 =  'assets/' + this.folder + '/' + 'cuatro.png';
+          } else {
+            if (this.num12 === 5){
+              this.imagen12 =  'assets/' + this.folder + '/' + 'cinco.png';
+            }
+          }
+        }
+      }
+    }
+
   }
   validate() {
     if (this.res === this.resu) {
