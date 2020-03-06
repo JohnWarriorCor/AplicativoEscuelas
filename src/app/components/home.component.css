@@ -9,8 +9,6 @@
     position: relative;
     z-index: 99;
     height: 30%;
-    border: 3px solid #e75758;
-    background-color: #e97e7f;
 }
 
 .contenido-descripcion {

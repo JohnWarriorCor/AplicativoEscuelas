@@ -21,7 +21,7 @@
         height: 400px;
     }
     body {
-        background-color: #f9dc3f;
+        background-color: #d4d1bd;
     }
 }
 
@@ -40,7 +40,7 @@
         height: 400px;
     }
     body {
-        background-color: #f9dc3f;
+        background-color: #dad6c3;
     }
 }
 
@@ -59,7 +59,7 @@
         height: 400px;
     }
     body {
-        background-color: #f9dc3f;
+        background-color: #b8b294;
     }
 }
 
@@ -78,7 +78,7 @@
         height: 400px;
     }
     body {
-        background-color: #f9dc3f;
+        background-color: #cfc690;
     }
 }
 
@@ -100,7 +100,7 @@
         height: 400px;
     }
     body {
-        background-color: #f9dc3f;
+        background-color: #e4ddb7;
     }
 }
 
@@ -119,7 +119,7 @@
         height: 400px;
     }
     body {
-        background-color: #f9dc3f;
+        background-color: #c7bf92;
     }
 }
 
@@ -155,7 +155,11 @@
 }
 
 body {
-    background-color: #f9dc3f;
+    /*background-color: #f3f1e3;*/
+    background-image: url("assets/back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 
@@ -172,31 +176,31 @@ body {
     animation: stroke 6s infinite linear;
 }
 
-.text:nth-child(5n + 1) {
+.text:nth-child(5n+1) {
     stroke: #F2385A;
     -webkit-animation-delay: -1.2s;
     animation-delay: -1.2s;
 }
 
-.text:nth-child(5n + 2) {
+.text:nth-child(5n+2) {
     stroke: #F5A503;
     -webkit-animation-delay: -2.4s;
     animation-delay: -2.4s;
 }
 
-.text:nth-child(5n + 3) {
+.text:nth-child(5n+3) {
     stroke: #E9F1DF;
     -webkit-animation-delay: -3.6s;
     animation-delay: -3.6s;
 }
 
-.text:nth-child(5n + 4) {
+.text:nth-child(5n+4) {
     stroke: #56D9CD;
     -webkit-animation-delay: -4.8s;
     animation-delay: -4.8s;
 }
 
-.text:nth-child(5n + 5) {
+.text:nth-child(5n+5) {
     stroke: #3AA1BF;
     -webkit-animation-delay: -6s;
     animation-delay: -6s;
